@@ -1,0 +1,124 @@
+<html>
+
+<head>
+  <title>Likor Lounge | Stolberg Beer Cafe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <a id="navigation"></a>
+
+  <div class="page-header likor-lounge-header">
+    <div class="page-banner-content">
+      <h1 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".75s">Likor Lounge</h1>
+      <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a href="#page-top"><i class="fas fa-angle-double-down wow animated fadeInDown orange-hover" data-wow-delay="2s" data-wow-duration="1s"></i></a>
+    </div>
+
+    <div id="social-contact"></div>
+    <div id="color-overlay"></div>
+  </div>
+
+  <a class="anchor" id="page-top"></a>
+  <div class="page-section grey-bg">
+
+    <div class="inner-page-section">
+
+      <div class="function-room-images">
+        <img class="function-room-1" src="img/function-rooms/likor-lounge-1.jpg">
+        <img class="function-room-2" src="img/function-rooms/likor-lounge-2.jpg">
+      </div>
+
+    </div>
+
+    <div class="inner-page-section white-bg">
+      <div class="function-room-info-container">
+        <li class="function-room-left">
+          <h2>Likor Lounge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="inlineLinks">
+            <a href="#function-enquiry"><h5>Enquire</h5></a>
+            <span>/</span>
+            <a href="img/stolberg-function-pack.pdf"><h5>Function Pack</h5></a>
+            <span>/</span>
+            <a target="_blank" href="https://www.google.com.au/maps/@-37.745292,145.0058393,3a,75y,270h,91.18t/data=!3m7!1e1!3m5!1s0R0oI65MiLIAAAQvvMzDXg!2e0!3e2!7i13312!8i6656!6m1!1e1"><h5>Tour</h5></a>
+          </div>
+        </li>
+        <li class="function-room-right">
+          <h4>Capacity</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          <h4>Availability</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          <h4>Facilities</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </li>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="anchor" id="function-enquiry"></div>
+  <a id="function-form"></a>
+  <div id="footer"></div>
+
+  </div>
+
+
+  <!-- Font Awesome -->
+  <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+
+  <!-- Homepage Slider -->
+  <script src="js/vegas.js" type="text/javascript" charset="utf-8"></script>
+
+  <!--Animations -->
+  <script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+
+  <!-- HTML Loads init -->
+  <script>
+    $(document).ready(function() {
+      $("#navigation").load("/navigation.html");
+      $("#social-contact").load("/social-contact.html");
+      $("#newsletter").load("/newsletter.html");
+      $("#function-form").load("/function-form.html");
+      $("#footer").load("/footer.html");
+    });
+  </script>
+
+  <!-- Animations init -->
+  <script>
+    wow = new WOW({
+      mobile: true, // default
+      live: true,
+      offset: 0 // default
+    })
+    wow.init();
+  </script>
+  </body>
+
+  </html>

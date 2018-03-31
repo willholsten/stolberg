@@ -1,0 +1,84 @@
+<html>
+
+<head>
+  <title>Stolberg Beer Cafe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="stylesheet" href="css/vegas.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+</head>
+<body>
+
+<!-- Content : Start -->
+  <a id="navigation"></a>
+
+  <div class="home-wrapper">
+    <div class="slider-content">
+      <p class="wow fadeIn mobile-hide" data-wow-duration="1s" data-wow-delay=".75s">Welcome to the Stolberg Beer Cafè, home to four beautiful function rooms,with capacity ranging from 25 guests to 350 guests.</p>
+      <div class="hp-hours wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
+        <a class="homepageButton opacity" href="/eat-drink.html">View Menus</a>
+        <a class="homepageButton opacity" href="#">Book a table</a>
+        <p><b>Operating Hours</b>, 12pm - late all week.</br><b>Kitchen Hours</b>, Sunday: Thursday 12pm - 9pm, Friday & Saturday: 12pm - 10pm</p>
+      </div>
+    </div>
+
+    <div id="social-contact"></div>
+
+    <div id="color-overlay"></div>
+    <div id="newsletter"></div>
+  </div>
+<!-- Content : End -->
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<!-- Font Awesome -->
+<script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<!-- Scripts -->
+<script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Homepage Slider -->
+<script src="js/vegas.js" type="text/javascript" charset="utf-8"></script>
+
+<!--Animations -->
+<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- HTML Loads init -->
+<script>
+  $(document).ready(function() {
+    $("#navigation").load("/navigation.html");
+    $("#social-contact").load("/social-contact.html");
+    $("#newsletter").load("/newsletter.html");
+    $("#function-form").load("/function-form.html");
+    $("#footer").load("/footer.html");
+  });
+</script>
+
+<!-- Animations init -->
+<script>
+  wow = new WOW({
+    mobile: true, // default
+    live: true,
+    offset: 0 // default
+  })
+  wow.init();
+</script>
+</body>
+
+</html>

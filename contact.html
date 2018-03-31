@@ -1,0 +1,147 @@
+<html>
+
+<head>
+  <title>Contact | Stolberg Beer Cafe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <a id="navigation"></a>
+
+  <div class="page-header contact-header">
+    <div class="page-banner-content">
+      <h1 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".75s">Contact</h1>
+      <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a href="#page-top"><i class="fas fa-angle-double-down wow animated fadeInDown orange-hover" data-wow-delay="2s" data-wow-duration="1s"></i></a>
+    </div>
+
+    <div id="social-contact"></div>
+    <div id="newsletter"></div>
+    <div id="color-overlay"></div>
+  </div>
+
+  <div class="anchor" id="page-top"></div>
+  <div class="page-section grey-bg">
+
+    <div class="inner-page-section white-bg">
+      <div class="function-room-info-container">
+        <li class="function-room-left">
+          <h4>Location</h4>
+          <p>Corner Bell St & Plenty Rd,</br>Preston, VIC 3072</p>
+
+          <h4>General Enquiries</h4>
+          <a href="mailto:info@stolberg.com.au">
+            <p class="opacity">info@stolberg.com.au</p>
+          </a>
+
+          <h4>Function Enquiries</h4>
+          <a href="mailto:functions@stolberg.com.au">
+            <p class="opacity">funtions@stolberg.com.au</p>
+          </a>
+
+          <h4>Operating Hours</h4>
+          <p><b>Monday:</b> 4pm to 11pm</br>
+            <b>Tuesday:</b> 12pm to Late</br>
+            <b>Wednesday & Thursday:</b> 12pm to 11pm</br>
+            <b>Friday & Saturday:</b> 11:30am to Late</p>
+
+        </li>
+        <li class="function-room-right">
+          <h4>Get In Touch</h4>
+          <form class="form-message" id="ajax-contact" method="post" action="php/mailer.php">
+            <div id="form-messages"></div>
+            <input class="input form-input" type="text" id="name" name="name" required placeholder="Name">
+            <input class="input form-input" type="text" id="email" name="email" required placeholder="Email">
+            <textarea class="input form-input form-message" id="message" name="message" required placeholder="Message..."></textarea>
+            <input class="button-submit" type="submit" value="Submit" />
+            </button>
+          </form>
+        </li>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <div id="footer"></div>
+
+  </div>
+
+
+  <!-- Font Awesome -->
+  <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+
+  <!-- Homepage Slider -->
+  <script src="js/vegas.js" type="text/javascript" charset="utf-8"></script>
+
+  <!-- HTML Loads init -->
+  <script>
+    $(document).ready(function() {
+      $("#navigation").load("/navigation.html");
+      $("#social-contact").load("/social-contact.html");
+      $("#newsletter").load("/newsletter.html");
+      $("#function-form").load("/function-form.html");
+      $("#footer").load("/footer.html");
+    });
+  </script>
+
+  <!-- WOW + Animations init -->
+  <script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    wow = new WOW({
+      mobile: true, // default
+      live: true,
+      offset: 0 // default
+    })
+    wow.init();
+  </script>
+  <script>
+    function initMap() {
+      var royalderbyhotel = {
+        lat: -37.7452883,
+        lng: 145.0062684
+      };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 13,
+        center: royalderbyhotel,
+        scrollwheel: false
+      });
+      var icon = {
+        url: 'img/map-marker.png',
+        scaledSize: new google.maps.Size(60, 80)
+        // origin: new google.maps.Point(0,0), anchor: new google.maps.Point(50, 60)
+      };
+      var marker = new google.maps.Marker({
+        position: royalderbyhotel,
+        map: map,
+        icon: icon
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD11q99mIVYG6S18V3lSpwbIZ2cRaAeaYc&libraries=places&callback=initMap"></script>
+</body>
+
+</html>
