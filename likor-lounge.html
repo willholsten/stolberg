@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Likor Lounge | Stolberg Beer Cafe</title>
+  <title>Stolberg Beer Cafe</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="" />
@@ -9,11 +9,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
 
-  <!-- Font Awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalise.css">
+  <link rel="stylesheet" href="css/vegas.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -24,6 +22,10 @@
 
 <body>
 
+
+
+
+  <!----------- Content : Start ----------->
   <a id="navigation"></a>
 
   <div class="page-header likor-lounge-header">
@@ -56,11 +58,11 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div class="inlineLinks">
-            <a href="#function-enquiry"><h5>Enquire</h5></a>
+            <a class="opacity" href="#function-enquiry">Enquire</a>
             <span>/</span>
-            <a href="img/stolberg-function-pack.pdf"><h5>Function Pack</h5></a>
+            <a class="opacity" href="img/stolberg-function-pack.pdf">Function Pack</a>
             <span>/</span>
-            <a target="_blank" href="https://www.google.com.au/maps/@-37.745292,145.0058393,3a,75y,270h,91.18t/data=!3m7!1e1!3m5!1s0R0oI65MiLIAAAQvvMzDXg!2e0!3e2!7i13312!8i6656!6m1!1e1"><h5>Tour</h5></a>
+            <a class="opacity" target="_blank" href="https://www.google.com.au/maps/@-37.745292,145.0058393,3a,75y,270h,91.18t/data=!3m7!1e1!3m5!1s0R0oI65MiLIAAAQvvMzDXg!2e0!3e2!7i13312!8i6656!6m1!1e1">Tour</a>
           </div>
         </li>
         <li class="function-room-right">
@@ -80,33 +82,35 @@
   </div>
 
   <div class="anchor" id="function-enquiry"></div>
-  <a id="function-form"></a>
+  <div id="function-form"></div>
   <div id="footer"></div>
+  <!----------- Content : End ----------->
 
-  </div>
+
+
 
 
   <!-- Font Awesome -->
   <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-  <!-- Scripts -->
-  <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
-
   <!-- Homepage Slider -->
-  <script src="js/vegas.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/vegas.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/scripts.js"></script>
+  <script src="js/app.js"></script>
 
   <!--Animations -->
-  <script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/wow.min.js"></script>
 
   <!-- HTML Loads init -->
   <script>
     $(document).ready(function() {
-      $("#navigation").load("/navigation.html");
-      $("#social-contact").load("/social-contact.html");
-      $("#newsletter").load("/newsletter.html");
-      $("#function-form").load("/function-form.html");
-      $("#footer").load("/footer.html");
+      $("#navigation").load("components/navigation.html");
+      $("#social-contact").load("components/social-contact.html");
+      $("#newsletter").load("components/newsletter.html");
+      $("#function-form").load("components/function-form.html");
+      $("#footer").load("components/footer.html");
     });
   </script>
 
@@ -119,6 +123,6 @@
     })
     wow.init();
   </script>
-  </body>
+</body>
 
-  </html>
+</html>

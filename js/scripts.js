@@ -5,7 +5,7 @@ NAVIGATION: HAMBURGER
 
 $(document).ready(function(){
   $(".nav-button").click(function(){
-    $(".nav-menu-wrapper").toggleClass('menu-hide');
+    $(".mobile-menu").toggleClass('mobile-menu-hide');
   });
 });
 
@@ -70,12 +70,6 @@ $(function () {
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
 });
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".nav-bar span");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
 
 $(function () {
   $(document).scroll(function () {
@@ -88,25 +82,39 @@ $(function () {
 SMOOTH SCROLLING WITH ANCHOR links
 *****************************************/
 
-jQuery(document).ready(function(){
-jQuery('a[href*=#]:not([href=#])').click(function() {
-if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-|| location.hostname == this.hostname) {
-var target = jQuery(this.hash);
-target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
-if (target.length) {
-jQuery('html, body').animate({
-scrollTop: target.offset().top }, 1000);
-return false;
-}
-}
-});
-});
-jQuery(window).load(function(){
-function goToByScroll(id){
-jQuery("html, body").animate({scrollTop: jQuery("#"+id).offset().top }, 1000);
-}
-if(window.location.hash != '') {
-goToByScroll(window.location.hash.substr(1));
-}
-});
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });

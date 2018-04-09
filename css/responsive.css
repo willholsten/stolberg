@@ -71,24 +71,28 @@ STRUCTURE
   height: 80px; /*same height as header*/
   margin-top: -80px; /*same height as header*/
 }
+.footerSpacer {
+  height: 0;
+}
+
+/*******************************
+SOCIAL / CONTACT FOOTER
+********************************/
 .social-contact {
   position: absolute;
-  background-color: rgba(255,255,255,0);
+  bottom: 0;
+  background-color: rgba(0,0,0,0);
 }
 .contact {
-  position: absolute;
-  bottom: 65px; right: 20px;
-  color: white;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+  margin-bottom: 21px;
 }
-
-.social {
-  position: absolute;
-  bottom: 45px; left: 20px;
-}
-
 .social a, .contact a {
   color: white;
 }
+
 
 
 /*******************************
@@ -148,22 +152,36 @@ NAVIGATION
 **********************************************/
 
 #logo_img {
+  position:relative;
+  content: url('../img/logo-stolberg.svg');
   top: 0px;
-  width: 250px;
+  width: 200px;
   padding: 20px;
+  margin: 20px 0 0;
 }
 
 #logo_img.scrolled {
-  top: 0px;
+  content: url('../img/logo-stolberg-black.svg');
   width: 160px;
-  padding: 20px;
-}
-
-.navigation-spacer {
-  width: 250px;
+  margin: 0;
 }
 .nav-bar {
   height: 80px;
+}
+
+/**********************************************
+NAVIGATION SCROLLED
+**********************************************/
+.nav-bar.scrolled {
+  background-color: rgba(255,255,255,.9);
+  transition: 0.2s;
+  box-shadow: 0px 1px 1px rgba(0,0,0,.1);
+  z-index: 900;
+  top: 0;
+}
+
+#logo_img.scrolled {
+  display: none;
 }
 
 /**********************************************
@@ -186,13 +204,10 @@ HOMEPAGE
 }
 
 .slider-content p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 32px;
 }
-.hp-hours p {
-  font-size: 16px;
-  font-style: italic;
-}
+
 /**********************************************
 EAT & DRINK
 **********************************************/
@@ -215,10 +230,6 @@ WHAT'S ON
   max-width: 350px;
   padding: 15px;
 }
-
-.whats-on-block-inner {
-}
-
 
 /**********************************************
 EVENTS
@@ -311,10 +322,7 @@ FUNCTION ROOM
 FOOTER
 **********************************************/
 .home-wrapper {
-  margin-bottom: 0;
-}
-.footer {
-  margin-bottom: 0px;
+  max-height: 100vh;
 }
 
 }
