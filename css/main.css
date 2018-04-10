@@ -195,7 +195,7 @@ SOCIAL / CONTACT FOOTER
   display: flex;
   align-items: center;
 }
-.social a {
+.social a, .social span {
   padding: 5px 15px;
 }
 .contact {
@@ -225,7 +225,7 @@ h1 {
 }
 h2 {
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #7daf99;
   font: 900 22px/26px 'Lato', sans-serif;
@@ -514,35 +514,41 @@ FUNCTIONS FORM
 }
 .form-message {
   width: 100%;
+  font-size: 16px;
 }
 #message {
-  min-height: 150px;
+  min-height: 200px;
 }
 .function-select {
+  display: block;
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   height: 60px;
-  font: 500 14px 'Lekton', sans-serif;
+  font: 500 16px 'Lekton', sans-serif;
   padding-left: 20px;
+  width: 100%;
 }
 
 .function-select:first-child {
-    color: #c1c1c1 !important;
+  color: #c1c1c1 !important;
 }
 
 .form-dropdown {
   position:relative;
+  display: block;
+  padding: 0;
 }
 .form-dropdown::after {
   position: absolute;
-  top: -15px;
-  right: 15px;
+  top: 20px;
+  right: 20px;
   color: #7daf99;
   content: "\f0dd";
   font-family: FontAwesome;
-  font-size: 14px;
+  font-size: 18px;
+  pointer-events: none;
 }
 /*******************
 CONTACT FORM
@@ -639,7 +645,7 @@ BUTTONS
   text-transform: uppercase;
   letter-spacing: 1px;
   background: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgba(255,255,255,0);
 }
 
 
@@ -714,18 +720,18 @@ NAVIGATION
 
 .nav-bar i {
   color: white;
-  font-size: 20px;
   z-index: 999 !important;
 }
 .nav-button {
   position: fixed;
-  top: 12px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
   cursor: pointer;
   z-index: 999 !important;
   color: white;
-  padding: 10px;
+  padding: 12px;
   clear: both;
+  font-size: 20px;
 }
 .mobile-menu {
   display: flex;
@@ -865,13 +871,14 @@ HOMEPAGE
   text-align: center;
   color: white;
   height: 100vh;
-  max-height: calc(100vh - 70px);
+  max-height: calc(100vh);
   overflow: hidden;
   z-index: -1;
+  background-color: black;
 }
 .slider-content {
   position: absolute;
-  right: 0; left: 0; bottom: 40%;
+  right: 0; left: 0; bottom: 20%;
   max-width: 100%;
   margin: auto;
   padding: 0 15px;
@@ -939,6 +946,37 @@ PAGE: EAT & DRINK
 PAGE: WHAT'S ON
 **********************************************/
 
+.new-whats-on {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.new-whats-on li {
+  display: flex;
+  width: 28%;
+  margin: 10px;
+  flex-direction: column;
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.new-whats-on h2 {
+  margin: 20px 0 0 20px;
+  text-align: left;
+}
+
+.new-whats-on p {
+  margin-left: 20px;
+}
+
+.new-whats-on li > img {
+  align-self: center
+
+}
+
+
+
+
 .whats-on-block {
   font-size: 0px;
   display: flex;
@@ -966,14 +1004,14 @@ PAGE: WHAT'S ON
   border-radius: 100%;
   padding: 0 35px;
   text-align:  center;
-  margin: 0 auto 20px;
+  margin: 0 auto 30px;
 }
 
 .whats-on-block li {
   width: 100%;
   max-width: 100%;
-  padding: 15px 0;
-  background: rgba(255,255,255,.5);
+  padding: 30px 0;
+  background: rgba(255,255,255,.3);
   margin: 5px;
   border: 1px solid #e5e5e5;
 }
@@ -1039,7 +1077,7 @@ PAGE: FUNCTIONS
   margin-top: 20px;
 }
 
-.inlineLinks a, span {
+.inlineLinks > a, .inlineLinks > span {
   display: inline-block;
   padding-right: 10px;
   color: #7daf99;

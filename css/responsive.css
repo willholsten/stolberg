@@ -75,6 +75,7 @@ STRUCTURE
   height: 0;
 }
 
+
 /*******************************
 SOCIAL / CONTACT FOOTER
 ********************************/
@@ -89,7 +90,7 @@ SOCIAL / CONTACT FOOTER
   align-self: flex-end;
   margin-bottom: 21px;
 }
-.social a, .contact a {
+.social-contact a, .social-contact span {
   color: white;
 }
 
@@ -102,7 +103,7 @@ h1 {
   font-size: 48px;
 }
 h2 {
-  font: 700 28px/32px 'Lato', sans-serif;
+  font: 700 26px/32px 'Lato', sans-serif;
 }
 
 .page-banner-content p {
@@ -132,12 +133,13 @@ FORM
   max-width: 100%;
   overflow: hidden;
 }
+
+.form-input {
+  margin: 5px 0px;
+}
 .form-message {
   margin: 5px;
   flex-grow: 2;
-}
-.form-input {
-  margin: 5px 0px;
 }
 .newsletter-content {
   max-height: 600px;
@@ -190,7 +192,7 @@ HOMEPAGE
 
 
 .slider-content {
-  top: 25%;
+  bottom: 55%;
   height: 100px;
 }
 
@@ -228,7 +230,7 @@ WHAT'S ON
 .whats-on-block li {
   width: 33.33%;
   max-width: 350px;
-  padding: 15px;
+  padding: 40px 15px;
 }
 
 /**********************************************

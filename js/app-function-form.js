@@ -2,10 +2,10 @@
 $(function() {
 
 	// Get the form.
-	var functionForm = $('#ajax-function-form');
+	var form = $('#ajax-contact');
 
 	// Get the messages div.
-	var functionFormMessages = $('#function-form-messages');
+	var formMessages = $('#form-messages');
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {
@@ -13,35 +13,35 @@ $(function() {
 		e.preventDefault();
 
 		// Serialize the form data.
-		var formData = $(functionForm).serialize();
+		var formData = $(form).serialize();
 
 		// Submit the form using AJAX.
 		$.ajax({
 			type: 'POST',
-			url: $(functionForm).attr('action'),
+			url: $(form).attr('action'),
 			data: formData
 		})
 		.done(function(response) {
-			// Make sure that the functionFormMessages div has the 'success' class.
-			$(functionFormMessages).removeClass('error');
-			$(functionFormMessages).addClass('success');
+			// Make sure that the formMessages div has the 'success' class.
+			$(formMessages).removeClass('error');
+			$(formMessages).addClass('success');
 
 			// Set the message text.
-			$(functionFormMessages).text(response);
+			$(formMessages).text(response);
 
 			// Clear the form.
-			$('#name, #email, #date, #guests, #phone, #occassion, #time, #room, #message').val('');
+			$('#name, #email, #message').val('');
 		})
 		.fail(function(data) {
-			// Make sure that the functionFormMessages div has the 'error' class.
-			$(functionFormMessages).removeClass('success');
-			$(functionFormMessages).addClass('error');
+			// Make sure that the formMessages div has the 'error' class.
+			$(formMessages).removeClass('success');
+			$(formMessages).addClass('error');
 
 			// Set the message text.
 			if (data.responseText !== '') {
-				$(functionFormMessages).text(data.responseText);
+				$(formMessages).text(data.responseText);
 			} else {
-				$(functionFormMessages).text('Oops! An error occured and your message could not be sent.');
+				$(formMessages).text('Oops! An error occured and your message could not be sent.');
 			}
 		});
 

@@ -1,47 +1,42 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+<script>new WOW().init();</script>
+
 <div class="page-section function-form">
   <div class="inner-page-section padding-top-reset">
-    <h2 class="center">Function Enquiry</h2>
+    <h2 class="center wow fadeIn" data-wow-delay=".75s">Function Enquiry</h2>
 
-    <div id="function-form-messages"></div>
-
-    <form class="form form-messages" id="ajax-function-form" method="post" action="php/mailer-functions.php">
-      <div class="form-flex">
-
+    <form class="form-message" id="ajax-contact" method="post" action="php/function-mailer.php">
+      <div id="form-messages"></div>
+      <div class="form-flex wow fadeIn" data-wow-delay="1.5s">
         <div class="half">
-          <input class="input form-input" type="text" id="name" name="name" required="required" placeholder="Name">
-
-          <input class="input form-input" type="text" id="phone" name="phone" required="required" placeholder="Phone Number">
-
-          <input class="input form-input" type="text" id="email" name="email" required="required" placeholder="Email">
-
-          <input class="input form-input" type="text" id="occasion" name="occassion" required="required" placeholder="Occassion">
+          <input class="input form-input" type="text" id="name" name="name" required placeholder="Name">
+          <input class="input form-input" type="text" id="email" name="email" required placeholder="Email">
+          <input class="input form-input" type="text" id="phone" name="phone" placeholder="Phone Number">
+          <input class="input form-input" type="text" id="occasion" name="occasion" placeholder="Occasion">
         </div>
-
         <div class="half">
-          <input class="input form-input" type="text" id="date" name="date" required="required" placeholder="Event Date">
+          <input class="input form-input" type="text" id="date" name="date" placeholder="Event Date">
+          <input class="input form-input" type="text" id="time" name="time" placeholder="Event Time">
+          <input class="input form-input" type="text" id="guests" name="guests" placeholder="Number of Guests">
 
-          <input class="input form-input" type="text" id="time" name="time" required="required" placeholder="Event Time">
-
-          <input class="input form-input" type="text" id="guests" name="email" required="required" placeholder="Number of Guests">
-
-<span class="form-dropdown">
-          <select class=" form-input function-select" id="room" placeholder="Preferred Location">
-            <option value="" disabled selected hidden>Preferred Location</option>
-            <option value="Likor Lounge">Likor Lounge</option>
-            <option value="The Mahogany Room">The Mahogany Room</option>
-            <option value="The Front Bar">The Front Bar</option>
-            <option value="The Stolberg Room">The Stolberg Room</option>
-        </select>
-        </span>
+          <span class="form-dropdown">
+        <select class=" form-input function-select" id="roomOption" name="roomOption" placeholder="Preferred Location">
+          <option value="" disabled selected hidden>Preferred Location</option>
+          <option value="Likor Lounge" name="Likor Lounge">Likor Lounge</option>
+          <option value="The Mahogany Room" name="The Mahogany Room">The Mahogany Room</option>
+          <option value="The Front Bar" name="The Front Bar">The Front Bar</option>
+          <option value="The Stolberg Room" name="The Stolberg Room">The Stolberg Room</option>
+          <option value="No Preference" name="No Preference">No Preference</option>
+      </select>
+      </span>
         </div>
-
-        <div class="form-message">
-          <textarea class="input form-input" id="message" name="message" required="required" placeholder="Message..."></textarea>
-        </div>
-        <input class="button-submit left" type="submit" value="Submit"/>
-
+        <textarea class="input form-input form-message" id="message" name="message" required placeholder="Message..."></textarea>
+        <input class="button-submit" type="submit" value="Submit" /></input>
       </div>
-
     </form>
+
   </div>
 </div>
+
+
+<script src="../js/app.js"></script>

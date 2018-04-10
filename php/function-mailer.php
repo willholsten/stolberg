@@ -8,7 +8,13 @@
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
 				$name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $phone = trim($_POST["phone"]);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $occasion = trim($_POST["occasion"]);
+        $time = trim($_POST["time"]);
+        $date = trim($_POST["date"]);
+        $guests = trim($_POST["guests"]);
+        $roomOption = trim($_POST["roomOption"]);
         $message = trim($_POST["message"]);
 
         // Check that data was sent to the mailer.
@@ -36,17 +42,47 @@
         <body>
         <table>
         <tr>
-        <td style='font-size:16px; width: 400px;'><strong>General Enquiry</strong></td>
+        <td style='font-size:16px; width: 400px;'><strong>Function Enquiry</strong></td>
         </tr>
         <tr>
         <td style='font-size:12px; width: 400px;'><strong>Name: </strong>{$name}</td>
         </tr>
+
         <tr>
         <td style='font-size:12px; width: 400px;'><strong>Email: </strong>{$email}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Contact Number: </strong>{$phone}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Occasion:</strong> {$occasion}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Event Date: </strong>{$date}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Event Time: </strong>{$time}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Number of Guests: </strong>{$guests}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Preferred Location: </strong>{$roomOption}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Message:</strong></td>
         </tr>
         <tr>
         <td style='font-size:12px; width: 400px;'>{$message}</td>
         </tr>
+
         </table>
         </body>
         </html>
