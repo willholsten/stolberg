@@ -19,7 +19,7 @@
         preloadImage:            false,
         preloadVideo:            false,
         timer:                   true,
-        overlay:                 true,
+        overlay:                 false,
         autoplay:                true,
         shuffle:                 false,
         cover:                   true,

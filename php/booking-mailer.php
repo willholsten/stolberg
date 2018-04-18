@@ -8,7 +8,11 @@
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
 				$name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $phone = trim($_POST["phone"]);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $time = trim($_POST["time"]);
+        $date = trim($_POST["date"]);
+        $guests = trim($_POST["guests"]);
         $message = trim($_POST["message"]);
 
         // Check that data was sent to the mailer.
@@ -21,10 +25,10 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "willholsten@gmail.com";
+        $recipient = "willholsten@gmail.com, mail@willholsten.com";
 
         // Set the email subject.
-        $subject = "General Enquiry: $name";
+        $subject = "Reservation: $date";
 
         // Build the email content.
 
@@ -36,17 +40,39 @@
         <body>
         <table>
         <tr>
-        <td style='font-size:16px; width: 400px;'><strong>General Enquiry</strong></td>
+        <td style='font-size:16px; width: 400px;'><strong>Reservation</strong></td>
         </tr>
         <tr>
         <td style='font-size:12px; width: 400px;'><strong>Name: </strong>{$name}</td>
         </tr>
+
         <tr>
         <td style='font-size:12px; width: 400px;'><strong>Email: </strong>{$email}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Contact Number: </strong>{$phone}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Date: </strong>{$date}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Time: </strong>{$time}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Number of Guests: </strong>{$guests}</td>
+        </tr>
+
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Special Requests:</strong></td>
         </tr>
         <tr>
         <td style='font-size:12px; width: 400px;'>{$message}</td>
         </tr>
+
         </table>
         </body>
         </html>
@@ -63,7 +89,7 @@
         if (mail($recipient, $subject, $message, $headers)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Your message has been sent.";
+            echo "Thank You! Our team will get back to shortly";
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);

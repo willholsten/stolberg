@@ -2,7 +2,13 @@
 MEDIA QUERY: 481PX
 **********************************************************/
 
-@media screen and (min-width: 481px) {}
+@media screen and (min-width: 481px) {
+
+  .flex-whats-on li {
+    width: 50%;
+    margin: 10px;
+  }
+}
 
 /**********************************************************
 MEDIA QUERY: 760PX
@@ -27,7 +33,6 @@ GENERAL
 .border-left {
   border-left: 1px solid #e5e5e5;
 }
-
 .border-right {
   border-right: 1px solid #e5e5e5;
 }
@@ -75,6 +80,15 @@ STRUCTURE
   height: 0;
 }
 
+.border-right {
+  border-right: 1px solid #e5e5e5;
+}
+
+.inlineLinks a, .inlineLinks span {
+  padding-right: 15px;
+}
+
+
 
 /*******************************
 SOCIAL / CONTACT FOOTER
@@ -83,15 +97,35 @@ SOCIAL / CONTACT FOOTER
   position: absolute;
   bottom: 0;
   background-color: rgba(0,0,0,0);
+  padding: 0 20px;
 }
+.social-contact li {
+  width: 400px;
+}
+
 .contact {
   flex-direction: column;
   align-items: flex-end;
   align-self: flex-end;
   margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 24px;
+  width: 300px;
 }
-.social-contact a, .social-contact span {
+
+.contact a {
+  padding: 0;
+}
+.social a, .social span, .contact a, .contact p {
   color: white;
+}
+.social span {
+  font-weight: normal;
+}
+
+.contact-a a {
+  display: inline-block !important;
+  text-align: right;
 }
 
 
@@ -100,17 +134,16 @@ SOCIAL / CONTACT FOOTER
 TEXT
 ********************************/
 h1 {
-  font-size: 48px;
+  font-size: 44px;
+  line-height: 54px;
 }
 h2 {
-  font: 700 26px/32px 'Lato', sans-serif;
+  font: 600 26px/32px 'Montserrat', sans-serif;
 }
-
 .page-banner-content p {
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 28px;
 }
-
 .instagram-width {
   width: 750px;
 }
@@ -135,16 +168,26 @@ FORM
 }
 
 .form-input {
+  padding: 20px 15px;
   margin: 5px 0px;
 }
 .form-message {
   margin: 5px;
   flex-grow: 2;
 }
-.newsletter-content {
-  max-height: 600px;
-  margin: auto;
+.contact-message-box {
+  margin: 5px auto;
+  flex-grow: 2;
 }
+
+.newsletter-content, .booking-form-content {
+  position: relative;
+}
+
+.close {
+  top: 0; right: 0;
+}
+
 /*******************************
 BUTTONS
 ********************************/
@@ -152,10 +195,13 @@ BUTTONS
 /**********************************************
 NAVIGATION
 **********************************************/
+.nav-bar {
+  height: 80px;
+}
 
 #logo_img {
   position:relative;
-  content: url('../img/logo-stolberg.svg');
+  content: url('../img/symbols/logo-stolberg.svg');
   top: 0px;
   width: 200px;
   padding: 20px;
@@ -163,19 +209,17 @@ NAVIGATION
 }
 
 #logo_img.scrolled {
-  content: url('../img/logo-stolberg-black.svg');
+  content: url('../img/symbols/logo-stolberg-black.svg');
   width: 160px;
   margin: 0;
 }
-.nav-bar {
-  height: 80px;
-}
+
 
 /**********************************************
 NAVIGATION SCROLLED
 **********************************************/
 .nav-bar.scrolled {
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255,255,255,1);
   transition: 0.2s;
   box-shadow: 0px 1px 1px rgba(0,0,0,.1);
   z-index: 900;
@@ -187,12 +231,10 @@ NAVIGATION SCROLLED
 }
 
 /**********************************************
-HOMEPAGE
+PAGE: HOMEPAGE
 **********************************************/
-
-
 .slider-content {
-  bottom: 55%;
+  top: 40%;
   height: 100px;
 }
 
@@ -211,37 +253,12 @@ HOMEPAGE
 }
 
 /**********************************************
-EAT & DRINK
+PAGE: EAT & DRINK
 **********************************************/
-.eat-drink-block li {
-  max-width: 50%;
-  padding: 15px;
-}
-
-.eat-drink-block-copy {
-  padding: 40px;
-  min-height: 340px;
-}
-
-/**********************************************
-WHAT'S ON
-**********************************************/
-
-.whats-on-block li {
-  width: 33.33%;
-  max-width: 350px;
-  padding: 40px 15px;
-}
-
-/**********************************************
-EVENTS
-**********************************************/
-
-.flexContainer {
+.flex-eat-drink {
   padding-bottom: 60px;
 }
-.imageContainer {
-  display: inline-block;
+.eat-drink-img {
   max-width: 55%;
   min-height: 400px;
   height: 400px;
@@ -249,13 +266,11 @@ EVENTS
   max-height: 600px;
 }
 
-.imageContainer img {
-  width: 100%;
-  height: 100%;
+.eat-drink-img img {
+  min-height: 100%;
+  object-fit: cover;
 }
-
-.copyContainer {
-  /* display: inline-block; */
+.eat-drink-copy {
   width: auto;
   max-width: 45%;
   padding: 40px;
@@ -263,20 +278,37 @@ EVENTS
 }
 
 /**********************************************
-FUNCTIONS
+PAGE: WHAT'S ON
 **********************************************/
 
-.function-block li {
-  max-width: 50%;
-  padding: 15px;
+.flex-whats-on li {
+  width: 33%;
+  max-width: 350px;
 }
 
-.inlineLinks a, span {
-  padding-right: 15px;
-}
+/**********************************************
+PAGE: FUNCTIONS
+**********************************************/
 
-.function-block-copy {
+.flex-functions {
+  padding-bottom: 60px;
+}
+.functions-img {
+  max-width: 55%;
+  min-height: 400px;
+  height: 400px;
+  width: 600px;
+  max-height: 600px;
+}
+.functions-img img {
+  height: 100%;
+  object-fit: cover;
+}
+.functions-copy {
+  width: auto;
+  max-width: 45%;
   padding: 40px;
+  height: 400px;
 }
 
 /**********************************************
@@ -299,15 +331,6 @@ FUNCTION ROOM
 .function-room-images {
   flex-direction: row;
 }
-.function-room-info-container > li {
-  width: 50%;
-  padding: 0 30px;
-}
-
-.function-room-images img {
-  padding: 0;
-}
-
 .function-room-1 {
   width: 68%;
 }
@@ -315,9 +338,25 @@ FUNCTION ROOM
   width: 30%;
 }
 
-.function-room-left {
-  border-right: 1px solid #C4C4C4;
+.flex-function {
+  padding: 0px 20px;
+  background-color: white;
 }
+.flex-function li {
+  background-color: none;
+  width: 50%;
+  padding: 0 30px;
+}
+
+
+/**********************************************
+CONTACT
+**********************************************/
+.flex-contact li {
+  width: 50%;
+  padding: 0px 30px;
+}
+
 
 
 /**********************************************
@@ -335,18 +374,18 @@ MEDIA QUERY: 1020PX
 
 @media screen and (min-width: 1020px) {
 
-  /**************************
-  GENERAL
-  **************************/
+/**************************
+GENERAL
+**************************/
 
 /**************************
 NAVIGATION
 **************************/
 
-
 /**************************
 HOMEPAGE
 **************************/
+
 /**************************
 FOOTER
 **************************/

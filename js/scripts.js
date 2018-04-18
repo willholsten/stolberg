@@ -3,26 +3,70 @@
 NAVIGATION: HAMBURGER
 *****************************************/
 
-$(document).ready(function(){
+$(function(){
   $(".nav-button").click(function(){
-    $(".mobile-menu").toggleClass('mobile-menu-hide');
+    $("body").css("overflow","hidden");
+    $(".nav-button").hide();
+    $(".nav-close").show();
+    $(".mobile-menu-container").show();
   });
 });
+
+$(function(){
+  $(".nav-close, .mobile-menu-container").click(function(){
+    $("body").css("overflow","visible");
+    $(".nav-close").hide();
+    $(".nav-button").show();
+    $(".mobile-menu-container").hide();
+  });
+});
+
+
+
+
+
+
 
 /****************************************
 NEWSLETTER: SIGN UP
 *****************************************/
 
-$(document).ready(function(){
+$(function(){
   $(".sign-up").click(function(){
-    $(".newsletter").fadeIn();
+    $(".newsletter-container").fadeIn();
+    $("body").css("overflow","hidden");
+    $(".nav-bar").fadeOut();
+    $(".social-contact").fadeOut();
+  });
+});
+
+$(function(){
+  $(".close").click(function(){
+    $(".newsletter-container").fadeOut();
+    $("body").css("overflow","visible");
+    $(".nav-bar").fadeIn();
+    $(".social-contact").fadeIn();
+  });
+});
+
+/****************************************
+BOOKING
+*****************************************/
+
+$(function(){
+  $(".booking").click(function(){
+    $(".booking-container").fadeIn();
+    $("#logo_img").css("visability","hidden");
+    $("body").css("overflow","hidden");
     $(".nav-bar").fadeOut();
   });
 });
 
-$(document).ready(function(){
-  $(".sign-up-close").click(function(){
-    $(".newsletter").fadeOut();
+$(function(){
+  $(".close").click(function(){
+    $(".booking-container").fadeOut();
+    $("#logo_img").css("visibility","visible");
+    $("body").css("overflow","visible");
     $(".nav-bar").fadeIn();
   });
 });
@@ -32,7 +76,7 @@ $(document).ready(function(){
 HOMEPAGE: SLIDER
 *****************************************/
 
-jQuery(function($) {
+$(function($) {
     $('.home-wrapper').vegas({
         slides: [
             { src: '../img/page-headers/whats-on.jpg' },
@@ -48,7 +92,7 @@ jQuery(function($) {
 
 
 /****************************************
-NAVIGATION: FADE IN WHEN SCROLL
+SCROLLED ELEMENTS
 *****************************************/
 $(function () {
   $(document).scroll(function () {
@@ -118,3 +162,29 @@ $('a[href*="#"]')
       }
     }
   });
+
+  /****************************************
+  GOOGLE MAPS
+  *****************************************/
+
+  function initMap() {
+    var royalderbyhotel = {
+      lat: -37.7452883,
+      lng: 145.0062684
+    };
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: royalderbyhotel,
+      scrollwheel: false
+    });
+    var icon = {
+      url: '../img/symbols/map-marker.png',
+      scaledSize: new google.maps.Size(60, 80)
+      // origin: new google.maps.Point(0,0), anchor: new google.maps.Point(50, 60)
+    };
+    var marker = new google.maps.Marker({
+      position: royalderbyhotel,
+      map: map,
+      icon: icon
+    });
+  }
