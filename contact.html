@@ -29,14 +29,10 @@
   <!----------- Content : Start ----------->
   <div id="navigation"></div>
 
-  <div id="content">
-
     <div class="page-header contact-header">
-      <div class="page-banner-content">
         <h1 class="wow fadeInDown" data-wow-delay="1.5s">Contact</h1>
         <p class="wow fadeInUp" data-wow-delay="1.5s">We would love to hear from you, please get in touch by calling or completing the enquiry form below.</p>
         <a href="#page-top"><i class="fas fa-angle-double-down wow animated fadeInDown green-hover" data-wow-duration="2s" data-wow-delay="2s"></i></a>
-      </div>
 
       <div id="color-overlay"></div>
       <div id="booking"></div>
@@ -88,7 +84,6 @@
 
     <div id="map"></div>
 
-  </div>
   <div id="footer"></div>
   <!----------- Content : End ----------->
 
@@ -128,6 +123,27 @@
   </script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD11q99mIVYG6S18V3lSpwbIZ2cRaAeaYc&libraries=places&callback=initMap"></script>
+  <script>function initMap() {
+    var royalderbyhotel = {
+      lat: -37.7452883,
+      lng: 145.0062684
+    };
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: royalderbyhotel,
+      scrollwheel: false
+    });
+    var icon = {
+      url: '../img/symbols/map-marker.png',
+      scaledSize: new google.maps.Size(60, 80)
+      // origin: new google.maps.Point(0,0), anchor: new google.maps.Point(50, 60)
+    };
+    var marker = new google.maps.Marker({
+      position: royalderbyhotel,
+      map: map,
+      icon: icon
+    });
+  }</script>
   </body>
 
   </html>

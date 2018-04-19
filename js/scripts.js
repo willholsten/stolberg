@@ -55,19 +55,21 @@ BOOKING
 
 $(function(){
   $(".booking").click(function(){
-    $(".booking-container").fadeIn();
-    $("#logo_img").css("visability","hidden");
-    $("body").css("overflow","hidden");
-    $(".nav-bar").fadeOut();
+  $(".booking-container").fadeIn();
+  $("#logo_img").css("visability","hidden");
+  $("body").css("overflow","hidden");
+  $(".nav-bar").fadeOut();
+  $(".social-contact").fadeOut();
   });
 });
 
 $(function(){
   $(".close").click(function(){
-    $(".booking-container").fadeOut();
-    $("#logo_img").css("visibility","visible");
-    $("body").css("overflow","visible");
-    $(".nav-bar").fadeIn();
+  $(".booking-container").fadeOut();
+  $("#logo_img").css("visibility","visible");
+  $("body").css("overflow","visible");
+  $(".nav-bar").fadeIn();
+  $(".social-contact").fadeIn();
   });
 });
 
@@ -168,23 +170,23 @@ $('a[href*="#"]')
   *****************************************/
 
   function initMap() {
-    var royalderbyhotel = {
-      lat: -37.7452883,
-      lng: 145.0062684
-    };
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 13,
-      center: royalderbyhotel,
-      scrollwheel: false
-    });
-    var icon = {
-      url: '../img/symbols/map-marker.png',
-      scaledSize: new google.maps.Size(60, 80)
-      // origin: new google.maps.Point(0,0), anchor: new google.maps.Point(50, 60)
-    };
-    var marker = new google.maps.Marker({
-      position: royalderbyhotel,
-      map: map,
-      icon: icon
-    });
-  }
+  var stolberg = {
+    lat: -37.7452883,
+    lng: 145.0062684
+  };
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: stolberg,
+    scrollwheel: false
+  });
+  var icon = {
+    url: '../img/symbols/map-marker.png',
+    scaledSize: new google.maps.Size(60, 80)
+    // origin: new google.maps.Point(0,0), anchor: new google.maps.Point(50, 60)
+  };
+  var marker = new google.maps.Marker({
+    position: stolberg,
+    map: map,
+    icon: icon
+  });
+}
