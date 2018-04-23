@@ -843,7 +843,7 @@ CONTACT FORM
 HOMEPAGE
 **********************************************/
 .home-wrapper {
-  height: 100%;
+  height: 100% !important;
   width: 100%;
 }
 .home-content {
