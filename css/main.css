@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lekton:400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
 /**********************************************
-GENERAL
+GENERAL RESET
 **********************************************/
 
 * {
@@ -92,7 +92,7 @@ input:-webkit-autofill {
 }
 
 /**********************************************
-STRUCTURE
+GENERAL
 **********************************************/
 .page-section {
   padding: 40px 10px;
@@ -108,25 +108,6 @@ STRUCTURE
   padding: 10px 0px;
   z-index: 1;
 }
-.center {
-  text-align: center;
-}
-
-.left {
-  text-align: left;
-}
-
-.auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-#padding-reset {
-  padding: 0px !important;
-}
-.padding-top-reset {
-  padding-top: 0 !important;
-}
 #color-overlay {
   position: absolute;
    top: 0;
@@ -136,6 +117,17 @@ STRUCTURE
    background-color: #323238;
    opacity: 0.6;
    z-index: -5;
+}
+
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .margin-reset {
@@ -163,12 +155,6 @@ STRUCTURE
 .box-shadow {
   box-shadow: 0px 0px 10px rgba(0,0,0,.05);
 }
-
-.underline {
-  color: white;
-  text-decoration: underline;
-}
-
 
 /**********************************************
 TEXT
@@ -225,379 +211,15 @@ p {
   text-transform: none;
   padding: 3px 0;
 }
-
 .white {
   color: white;
 }
-
 .italic p {
   font-style: italic;
 }
-
-
-
-/**********************************************
-SOCIAL / CONTACT FOOTER
-**********************************************/
-.social-contact {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  bottom: 0; left: 0; right: 0;
-  background-color: rgba(255,255,255,.9);
-  width: 100%;
-  align: center;
-  height: 60px;
-  align-content: center;
-  margin: auto;
-  padding: 0 10px;
-  font-size: 16px;
-  font-weight: 100;
-  color: black;
-}
-.social {
-  display: flex;
-  align-items: center;
-}
-.hours {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-self: flex-end;
-  margin-bottom: 17px;
-}
-.hours span {
-  display: block;
+.underline {
   color: white;
-  font-size: 12px;
-  line-height: 24px;
-  cursor: default;
-}
-.contact {
-  display: flex;
-  align-items: center;
-  text-align: right
-}
-.social a, .social span, .contact a {
-  padding: 0px 12px;
-  display:inline-block;
-}
-.social span {
-  font-size: 12px;
-  font-weight: 600;
-}
-
-
-
-
-/**********************************************
-HEADERS
-**********************************************/
-.page-header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  margin: auto;
-  height: 100%;
-  z-index: 1;
-}
-.page-banner-content h2 {
-  color: white;
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-
-.page-header p {
-  color: white;
-  width: 920px;
-  max-width: 100%;
-  font-size: 14px;
-  text-align: center;
-  margin: 0 auto;
-  font-family: 'Lekton';
-}
-.fa-angle-double-down {
-  color: white;
-  font-size: 40px;
-  margin-top: 20px;
-}
-.eat-drink-header {
-  background: url("../img/page-headers/eat-drink.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.whats-on-header {
-  background: url("../img/page-headers/whats-on.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.functions-header {
-  background: url("../img/page-headers/functions.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.gallery-header {
-  background: url("../img/page-headers/gallery.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.contact-header {
-  background: url("../img/page-headers/contact.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.likor-lounge-header {
-  background: url("../img/page-headers/likor-lounge.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.the-mahogany-room-header {
-  background: url("../img/page-headers/the-mahogany-room.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.the-front-bar-header {
-  background: url("../img/page-headers/the-front-bar.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.the-stolberg-room-header {
-  background: url("../img/page-headers/the-stolberg-room.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-
-
-/**********************************************
-BACKGROUND COLOURS
-**********************************************/
-
-.grey-bg {
-  background-color: #f5f5f5;
-}
-.white-bg {
-  background-color: white;
-}
-
-/**********************************************
-FORMS
-**********************************************/
-.form {
-  font-size: 0px;
-  margin: 0 auto;
-  text-align: center;
-  width: 920px;
-  max-width: 100%;
-}
-input {
-  -webkit-appearance: none;
-  box-shadow: none !important;
-  border-radius: 2px;
-}
-textarea {
-  border: 1px solid #d9d9d9;
-  -webkit-appearance: none;
-  box-shadow: none !important;
-  font: 300 14px 'Montserrat', sans-serif;
-}
-.success {
-  padding: 20px 15px;
-  width: 100%;
-  text-align: left;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  font: 300 14px 'Montserrat', sans-serif;
-  color: #468847;
-  background-color: #dff0d8;
-  border: 1px solid #9cc37a;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-.error {
-  padding: 20px 15px;
-  width: 100%;
-  text-align: left;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  font: 300 14px 'Montserrat', sans-serif;
-  color: #b94a48;
-  background-color: #f2dede;
-  border: 1px solid rgba(185, 74, 72, 0.3);
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-/*******************
-NEWSLETTER FORM
-********************/
-.newsletter-container {
-  position: fixed;
-  display: none;
-  z-index: 999;
-  left: 0; right: 0; top: 0;
-}
-.newsletter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: white;
-  height: 100vh;
-  width: 100vw;
-}
-.newsletter-content {
-  width: 450px;
-  max-width: 100%;
-  padding: 0 20px;
-  /* box-shadow: 0px 0px 10px rgba(0,0,0,.5); */
-}
-
-
-
-.newsletter-content h3 {
-  color: #454545;
-}
-.newsletter-content p {
-  margin: 20px 5px 40px;
-  color: black;
-  text-align: center;
-}
-
-/*******************
-BOOKING FORM
-********************/
-.booking-container {
-  position: fixed;
-  display: none;
-  z-index: 999;
-  left: 0; right: 0; top: 0;
-}
-.booking-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: white;
-  height: 100vh;
-  width: 100vw;
-}
-.booking-form-content {
-  width: 450px;
-  max-width: 100%;
-  padding: 0 20px;
-  /* box-shadow: 0px 0px 10px rgba(0,0,0,.5); */
-}
-
-.booking-form-content h3 {
-  color: #454545;
-}
-.booking-form-content p {
-  margin: 20px auto;
-  color: black;
-  text-align: center;
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 20px;
-  opacity: 0.8;
-  transition: 0.2s;
-  color: #7daf99;
-}
-
-
-#booking-message {
-  min-height: 100px;
-}
-
-
-
-/*******************
-FUNCTIONS FORM
-********************/
-
-.function-form {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.form-input {
-  width: 100%;
-  margin: 5px 0px;
-  padding: 15px 15px;
-  color: #999;
-  border: 1px solid #e9e9e9;
-  background: #f5f5f5;;
-  border-radius: 0px;
-  font: 500 16px 'Lekton', sans-serif;
-  transition: 0.2s;
-  letter-spacing: 1px;
-}
-.form-input::placeholder {
-  color: #888;
-}
-.form-input:focus {
-  border: 1px solid #ccc;
-  transition: 0.2s;
-}
-.form-message {
-  width: 100%;
-  font-size: 16px;
-}
-#message {
-  min-height: 200px;
-}
-.function-select {
-  display: block;
-  position: relative;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  height: 60px;
-  font: 500 16px 'Lekton', sans-serif;
-  padding-left: 15px;
-  width: 100%;
-}
-
-.function-select:first-child {
-  color: #888 !important;
-}
-
-.form-dropdown {
-  position:relative;
-  display: block;
-  padding: 0;
-}
-.form-dropdown::after {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: #7daf99;
-  content: "\f0dd";
-  font-family: FontAwesome;
-  font-size: 18px;
-  pointer-events: none;
-}
-/*******************
-CONTACT FORM
-********************/
-
-.contact-message {
-  width: 100%;
-  max-width: 100%;
-  min-height: 200px;
-  margin: 5px;
-}
-.contact-message-box {
-  width: 100%;
-  font-size: 16px;
+  text-decoration: underline;
 }
 
 /*******************************
@@ -691,7 +313,6 @@ HOVERS
   transition: 0.2s;
 }
 
-
 /**********************************************
 NAVIGATION
 **********************************************/
@@ -767,7 +388,7 @@ NAVIGATION
   height: 100vh;
   width: 100%;
   padding-left: 50px;
-  z-index: 10;
+  z-index: 900;
 }
 .mobile-menu a, .mobile-menu span {
   display: flex;
@@ -783,7 +404,7 @@ NAVIGATION
   content: url('../img/symbols/logo-stolberg.svg');
   width: 160px;
   padding: 10px;
-  z-index: 2;
+  z-index: 800;
   margin: 0 auto;
 }
 @-webkit-keyframes fadeIn {
@@ -885,6 +506,338 @@ NAVIGATION SCROLLED
   color: black !important;
 }
 
+/**********************************************
+SOCIAL / CONTACT STRIP
+**********************************************/
+.social-contact {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 0; left: 0; right: 0;
+  background-color: rgba(255,255,255,.9);
+  width: 100%;
+  align: center;
+  height: 60px;
+  align-content: center;
+  margin: auto;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 100;
+  color: black;
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+.social span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.hours {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-bottom: 17px;
+}
+.hours span {
+  display: block;
+  color: white;
+  font-size: 12px;
+  line-height: 24px;
+  cursor: default;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  text-align: right
+}
+.social a, .social span, .contact a {
+  padding: 0px 12px;
+}
+
+
+
+/**********************************************
+PAGE HEADERS
+**********************************************/
+
+.page-banner-content h2 {
+  color: white;
+  margin:0 auto;
+  padding: 0 15px;
+}
+.page-header p {
+  color: white;
+  width: 920px;
+  max-width: 100%;
+  padding: 0 15px;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Lekton';
+}
+.fa-angle-double-down {
+  color: white;
+  font-size: 40px;
+  margin-top: 20px;
+}
+.eat-drink-header {
+  background: url("../img/page-headers/eat-drink.jpg");
+}
+.whats-on-header {
+  background: url("../img/page-headers/whats-on.jpg");
+}
+.functions-header {
+  background: url("../img/page-headers/functions.jpg");
+}
+.gallery-header {
+  background: url("../img/page-headers/gallery.jpg");
+}
+.contact-header {
+  background: url("../img/page-headers/contact.jpg");
+}
+.likor-lounge-header {
+  background: url("../img/page-headers/likor-lounge.jpg");
+}
+.the-mahogany-room-header {
+  background: url("../img/page-headers/the-mahogany-room.jpg");
+}
+.the-front-bar-header {
+  background: url("../img/page-headers/the-front-bar.jpg");
+}
+.the-stolberg-room-header {
+  background: url("../img/page-headers/the-stolberg-room.jpg");
+}
+
+.page-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/**********************************************
+BACKGROUND COLOURS
+**********************************************/
+
+.grey-bg {
+  background-color: #f5f5f5;
+}
+.white-bg {
+  background-color: white;
+}
+
+/**********************************************
+FORMS(GENERAL)
+**********************************************/
+.form {
+  font-size: 0px;
+  margin: 0 auto;
+  text-align: center;
+  width: 920px;
+  max-width: 100%;
+}
+input {
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  border-radius: 2px;
+}
+textarea {
+  border: 1px solid #d9d9d9;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  font: 300 14px 'Montserrat', sans-serif;
+}
+.success {
+  padding: 20px 15px;
+  width: 100%;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  font: 300 14px 'Montserrat', sans-serif;
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #9cc37a;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.error {
+  padding: 20px 15px;
+  width: 100%;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  font: 300 14px 'Montserrat', sans-serif;
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+/*******************
+NEWSLETTER FORM
+********************/
+.newsletter-container {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  left: 0; right: 0; top: 0;
+}
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+}
+.newsletter-content {
+  width: 450px;
+  max-width: 100%;
+  padding: 0 20px;
+}
+.newsletter-content h3 {
+  color: #454545;
+}
+.newsletter-content p {
+  margin: 20px 5px 40px;
+  color: black;
+  text-align: center;
+}
+
+/*******************
+BOOKING FORM
+********************/
+.booking-container {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  left: 0; right: 0; top: 0;
+}
+.booking-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+}
+.booking-form-content {
+  width: 450px;
+  max-width: 100%;
+  padding: 0 20px;
+}
+.booking-form-content h3 {
+  color: #454545;
+}
+.booking-form-content p {
+  margin: 20px auto;
+  color: black;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: 0.2s;
+  color: #7daf99;
+}
+#booking-message {
+  min-height: 100px;
+}
+
+/*******************
+FUNCTIONS FORM
+********************/
+.function-form {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.form-input {
+  width: 100%;
+  margin: 5px 0px;
+  padding: 15px 15px;
+  color: #999;
+  border: 1px solid #e9e9e9;
+  background: #f5f5f5;;
+  border-radius: 0px;
+  font: 500 16px 'Lekton', sans-serif;
+  transition: 0.2s;
+  letter-spacing: 1px;
+}
+.form-input::placeholder {
+  color: #888;
+}
+.form-input:focus {
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+.form-message {
+  width: 100%;
+  font-size: 16px;
+}
+#message {
+  min-height: 200px;
+}
+.function-select {
+  display: block;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 60px;
+  font: 500 16px 'Lekton', sans-serif;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.function-select:first-child {
+  color: #888 !important;
+}
+
+.form-dropdown {
+  position:relative;
+  display: block;
+  padding: 0;
+}
+.form-dropdown::after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #7daf99;
+  content: "\f0dd";
+  font-family: FontAwesome;
+  font-size: 18px;
+  pointer-events: none;
+}
+/*******************
+CONTACT FORM
+********************/
+
+.contact-message {
+  width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  margin: 5px;
+}
+.contact-message-box {
+  width: 100%;
+  font-size: 16px;
+}
 
 /**********************************************
 HOMEPAGE
@@ -902,10 +855,8 @@ HOMEPAGE
   text-align: center;
   color: white;
   height: 100%;
-  max-height: calc(100vh);
   overflow: hidden;
   z-index: -1;
-  /* background-color: #323238; */
 }
 .vegas-wrapper {
   z-index: 5;
@@ -922,14 +873,12 @@ PAGE: EAT & DRINK
   justify-content: center;
   padding-bottom: 15px;
 }
-
 .eat-drink-img {
   width: 100%;
   height: 100%;
   overflow: hidden;
   height: 250px;
 }
-
 .eat-drink-copy {
   display: flex;
   flex-direction: column;
@@ -970,7 +919,6 @@ PAGE: WHAT'S ON
   text-align: center;
   margin: 0 20px;
 }
-
 .whats-on-block {
   display: flex;
   flex-direction: column;
@@ -979,7 +927,6 @@ PAGE: WHAT'S ON
   text-align: center;
   color: white;
 }
-
 .whats-on-block > h2 {
   text-align: center;
   padding: 10px;
@@ -987,14 +934,12 @@ PAGE: WHAT'S ON
   color: #7daf99;
   margin-bottom: 40px;
 }
-
 .icon {
   display: block;
   margin: 60px auto 20px;
   font-size: 40px;
   color: #7daf99;
 }
-
 .whats-on-block > i {
   font-size: 60px !important;
 }
@@ -1010,7 +955,6 @@ PAGE: FUNCTIONS
   justify-content: center;
   padding-bottom: 15px;
 }
-
 .functions-img {
   width: 100%;
   height: 100%;
@@ -1018,7 +962,6 @@ PAGE: FUNCTIONS
   object-fit: cover;
   height: 250px;
 }
-
 .functions-copy {
   display: flex;
   flex-direction: column;
@@ -1043,13 +986,9 @@ PAGE: GALLERY
   margin: 0 auto;
   max-width: 100%;
 }
-
-
-
 iframe {
   max-width: 100% !important;
 }
-
 .figure {
   width: 30% !important;
   max-width: 30% !important;
@@ -1059,7 +998,7 @@ iframe {
   border: none !important;
 }
 /**********************************************
-PAGE: FUNCTION ROOM
+PAGE: FUNCTION ROOMS
 **********************************************/
 .function-room-images {
   position: relative;
@@ -1071,7 +1010,6 @@ PAGE: FUNCTION ROOM
   height: auto;
   padding: 10px 0;
 }
-
 .function-room-1, .function-room-2 {
   width: 100%;
 }
@@ -1092,7 +1030,6 @@ PAGE: FUNCTION ROOM
   margin: 5px 0;
   background-color: white;
 }
-
 .flex-function h2 {
   text-align: left;
 }
@@ -1118,7 +1055,7 @@ PAGE: CONTACT
 #map {
   position: relative;
   clear: both;
-  height: 600px;
+  height: 500px;
 }
 
 /**********************************************

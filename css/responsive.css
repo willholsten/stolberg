@@ -47,8 +47,6 @@ GENERAL
   flex-direction: row-reverse;
 }
 
-
-
 /*******************************
 STRUCTURE
 ********************************/
@@ -57,7 +55,7 @@ STRUCTURE
 }
 
 .inner-page-section {
-  padding: 50px 0px;
+  /* padding: 50px 0px; */
 }
 
 .inner-page-header {
@@ -88,46 +86,6 @@ STRUCTURE
   padding-right: 15px;
 }
 
-
-
-/*******************************
-SOCIAL / CONTACT FOOTER
-********************************/
-.social-contact {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0,0,0,0);
-  padding: 0 20px;
-}
-
-
-.contact {
-  flex-direction: column;
-  align-items: flex-end;
-  align-self: flex-end;
-  margin-bottom: 17px;
-  font-size: 12px;
-  line-height: 24px;
-  width: 300px;
-}
-
-.contact a {
-  padding: 0;
-}
-.social a, .social span, .contact a, .contact p {
-  color: white;
-}
-.social span {
-  font-weight: normal;
-}
-
-.contact-a a {
-  display: inline-block !important;
-  text-align: right;
-}
-
-
-
 /*******************************
 TEXT
 ********************************/
@@ -153,42 +111,6 @@ HEADERS
   font-size: 40px;
   margin-top: 50px;
 }
-/*******************************
-FORM
-********************************/
-.form-flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.form-input {
-  padding: 20px 15px;
-  margin: 5px 0px;
-}
-.form-message {
-  margin: 5px;
-  flex-grow: 2;
-}
-.contact-message-box {
-  margin: 5px auto;
-  flex-grow: 2;
-}
-
-.newsletter-content, .booking-form-content {
-  position: relative;
-}
-
-.close {
-  top: 0; right: 0;
-}
-
-/*******************************
-BUTTONS
-********************************/
 
 /**********************************************
 NAVIGATION
@@ -227,6 +149,76 @@ NAVIGATION SCROLLED
 #logo_img.scrolled {
   display: none;
 }
+
+/*******************************
+SOCIAL / CONTACT STRIP
+********************************/
+.social-contact {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,0);
+  padding: 0 20px;
+}
+
+
+.contact {
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+  margin-bottom: 17px;
+  font-size: 12px;
+  line-height: 24px;
+  width: 300px;
+}
+
+.contact a {
+  padding: 0;
+}
+.social a, .social span, .contact a, .contact p {
+  color: white;
+}
+.social span {
+  font-weight: normal;
+}
+
+.contact-a a {
+  display: inline-block !important;
+  text-align: right;
+}
+
+/*******************************
+FORM
+********************************/
+.form-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.form-input {
+  padding: 20px 15px;
+  margin: 5px 0px;
+}
+.form-message {
+  margin: 5px;
+  flex-grow: 2;
+}
+.contact-message-box {
+  margin: 5px auto;
+  flex-grow: 2;
+}
+
+.newsletter-content, .booking-form-content {
+  position: relative;
+}
+
+.close {
+  top: 0; right: 0;
+}
+
 
 /**********************************************
 PAGE: HOMEPAGE
@@ -308,7 +300,6 @@ PAGE: FUNCTIONS
   padding: 40px;
   height: 400px;
 }
-
 /**********************************************
 PAGE: FUNCTION ROOM
 **********************************************/
@@ -321,8 +312,6 @@ PAGE: FUNCTION ROOM
   height: auto;
   max-height: 400px;
 }
-
-
 /**********************************************
 FUNCTION ROOM
 **********************************************/
@@ -345,8 +334,6 @@ FUNCTION ROOM
   width: 50%;
   padding: 0 30px;
 }
-
-
 /**********************************************
 CONTACT
 **********************************************/
@@ -354,12 +341,6 @@ CONTACT
   width: 50%;
   padding: 0px 30px;
 }
-
-
-
-/**********************************************
-FOOTER
-**********************************************/
 
 
 }
