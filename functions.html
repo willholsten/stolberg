@@ -1,10 +1,10 @@
 <html>
 
 <head>
-  <title>The Stolberg</title>
+  <title>Functions | The Stolberg</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="" />
+  <meta name="description" content="Home to four function rooms, perfect for hosting a cocktail party, celebrating a birthday or organising a special corporate event."/>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
@@ -12,33 +12,34 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalise.css">
   <link rel="stylesheet" href="css/vegas.css">
+  <link rel="stylesheet" href="css/slick/slick.css">
+  <link rel="stylesheet" href="css/slick/slick-theme.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animate.css">
 
   <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 
 
-
   <!-- Content : Start -->
   <div id="navigation"></div>
+  <div id="newsletter"></div>
+  <div id="booking"></div>
 
-  <div class="page-header functions-header">
+  <div class="page-header functions-header  wow fadeIn">
       <h1 class="wow fadeInDown" data-wow-delay="1.5s">Functions</h1>
-      <p class="wow fadeInUp" data-wow-delay="1.5s">Stolberg is home to four beautiful function rooms, with capacity ranging from 25 to 350 guests.</br></br>
+      <p class="wow fadeInUp" data-wow-delay="1.5s">The Stolberg is home to four beautiful function rooms, with capacity ranging from 25 to 350 guests.</br></br>
       Whether you're hosting a cocktail party, celebrating a birthday or organising a special corporate event, our friendly and attentive function team can help you craft the perfect occasion to suit your theme, budget and taste preferences.</br></br>
       <a class="underline" target="_blank" href="img/stolberg-function-pack.pdf">Download</a> our function pack and start creating your perfect event.</p>
       <a href="#page-top"><i class="fas fa-angle-double-down wow animated fadeInDown green-hover" data-wow-duration="2s" data-wow-delay="2s"></i></a>
 
       <div id="color-overlay"></div>
-      <div id="booking"></div>
-      <div id="newsletter"></div>
       <div id="social-contact"></div>
   </div>
 
@@ -48,14 +49,14 @@
 
       <div class="flex-functions">
         <div class="functions-img wow fadeInLeft" data-wow-delay="0.75s">
-          <img src="img/function-rooms/likor-lounge.jpg" alt="Likor Lounge">
+          <img src="img/function-rooms/likor-lounge-1.jpg" alt="Likor Lounge">
         </div>
         <div class="functions-copy wow fadeInRight" data-wow-delay="0.75s">
           <h2 class="left">Likor Lounge</h2>
           <p class="left">A premium space with an exclusive and luxurious feel. With crystal chandeliers, rich marble bar and a vibrant palette, the Likor Lounge is sure to make an impact on your guests. Perfect for any private event, this room offers an exclusive and generous space with an outdoor area and large dance floor.
           </p>
           <div class="inlineLinks">
-            <a class="opacity" href="/likor-lounge.html">Explore</a>
+            <a class="opacity" href="/likor-lounge">Explore</a>
             <span>/</span>
             <a class="opacity" href="#function-enquiry">Enquire</a>
             <span>/</span>
@@ -66,14 +67,14 @@
 
       <div class="flex-functions flex-reverse">
         <div class="functions-img wow fadeInRight" data-wow-delay="0.75s">
-          <img src="img/function-rooms/the-mahogany-room.jpg" alt="The Mahogany Room">
+          <img src="img/function-rooms/the-mahogany-room-1.jpg" alt="The Mahogany Room">
         </div>
         <div class="functions-copy wow fadeInLeft" data-wow-delay="0.75s">
           <h2 class="left">The Mahogany Room</h2>
           <p class="left">This self-contained function room has polished wooden floors and charcoal walls decorated with thick gold framed mirrors.  Large chesterfield couches line the walls which sets the mood for that grand sit-down dinner or cocktail function.
           </p>
           <div class="inlineLinks">
-            <a class="opacity" href="/the-mahogany-room.html">Explore</a>
+            <a class="opacity" href="/the-mahogany-room">Explore</a>
             <span>/</span>
             <a class="opacity" href="#function-enquiry">Enquire</a>
             <span>/</span>
@@ -86,14 +87,14 @@
 
       <div class="flex-functions">
         <li class="functions-img wow fadeInLeft" data-wow-delay="0.75s">
-          <img src="img/function-rooms/the-front-bar.jpg" alt="The Front Bar">
+          <img src="img/function-rooms/the-front-bar-1.jpg" alt="The Front Bar">
         </li>
         <li class="functions-copy wow fadeInRight" data-wow-delay="0.75s">
           <h2 class="left">The Front Bar</h2>
           <p class="left">The Front Bar has a relaxed & stylish feel. This multipurpose room can be transformed for any event, cocktail or sit-down. Perfect for craft beer lovers, with a choice of 12 different beers on tap including an espresso martini tap!
           </p>
           <div class="inlineLinks">
-            <a class="opacity" href="/the-front-bar.html">Explore</a>
+            <a class="opacity" href="/the-front-bar">Explore</a>
             <span>/</span>
             <a class="opacity" href="#function-enquiry">Enquire</a>
             <span>/</span>
@@ -111,7 +112,7 @@
           <p class="left">With its own private courtyard & bar, boasting large mirrors, wooden floor boards and featured chandeliers, it’s the perfect space for any cocktail or private dining event.
           </p>
           <div class="inlineLinks">
-            <a class="opacity" href="/the-stolberg-room.html">Explore</a>
+            <a class="opacity" href="/the-stolberg-room">Explore</a>
             <span>/</span>
             <a class="opacity" href="#function-enquiry">Enquire</a>
             <span>/</span>
@@ -134,28 +135,21 @@
 
 
 
+  <!-- Scripts -->
+  <script src="js/scripts.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/vegas.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/contact-app.js"></script>
+  <script src="js/function-app.js"></script>
+  <script src="js/booking-app.js"></script>
+
   <!-- Font Awesome -->
   <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-  <!-- Homepage Slider -->
-  <script src="js/vegas.js"></script>
-
-  <!-- Scripts -->
-  <script src="js/scripts.js"></script>
-  <script src="js/app.js"></script>
-
-  <!-- WOW Animations -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-
-  <!-- WOW Animations init -->
-  <script>
-    wow = new WOW({})
-    wow.init();
-  </script>
-
   <!-- HTML Loads -->
   <script>
-    $(function() {
+    $(function () {
       $("#navigation").load("components/navigation.html");
       $("#social-contact").load("components/social-contact.html");
       $("#booking").load("components/booking.html");

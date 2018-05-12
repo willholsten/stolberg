@@ -1,10 +1,11 @@
 <html>
 
 <head>
-  <title>The Stolberg</title>
+  <title>Contact | The Stolberg</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="" />
+  <meta name="description" content="If you have a query or a suggestion, you can contact us here, we'd love to hear from you!"
+  />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
@@ -12,107 +13,99 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalise.css">
   <link rel="stylesheet" href="css/vegas.css">
+  <link rel="stylesheet" href="css/slick/slick.css">
+  <link rel="stylesheet" href="css/slick/slick-theme.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animate.css">
 
   <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 
-
-
   <!-- Content : Start -->
   <div id="navigation"></div>
+  <div id="newsletter"></div>
+  <div id="booking"></div>
 
-    <div class="page-header contact-header">
-        <h1 class="wow fadeInDown" data-wow-delay="1.5s">Contact</h1>
-        <p class="wow fadeInUp" data-wow-delay="1.5s">We would love to hear from you, please get in touch by calling or completing the enquiry form below.</p>
-        <a href="#page-top"><i class="fas fa-angle-double-down wow animated fadeInDown green-hover" data-wow-duration="2s" data-wow-delay="2s"></i></a>
+  <div class="page-header contact-header wow fadeIn">
+    <h1 class="wow fadeInDown" data-wow-delay="1.5s">Contact</h1>
+    <p class="wow fadeInUp" data-wow-delay="1.5s">We would love to hear from you, please get in touch by calling or completing the enquiry form below.</p>
+    <a href="#page-top">
+      <i class="fas fa-angle-double-down wow animated fadeInDown green-hover" data-wow-duration="2s" data-wow-delay="2s"></i>
+    </a>
 
-      <div id="color-overlay"></div>
-      <div id="booking"></div>
-      <div id="newsletter"></div>
-      <div id="social-contact"></div>
-    </div>
+    <div id="color-overlay"></div>
+    <div id="social-contact"></div>
+  </div>
 
-    <div class="anchor" id="page-top"></div>
-    <div class="page-section grey-bg">
+  <div class="anchor" id="page-top"></div>
+  <div class="page-section grey-bg">
 
-      <div class="inner-page-section white-bg box-shadow">
-        <div class="flex-contact">
-          <li class="border-right">
-            <h4 class="margin-top-reset">Location</h4>
-            <p>Corner Bell St & Plenty Rd,</br>Preston, VIC 3072</p>
+    <div class="inner-page-section white-bg box-shadow wow fadeIn" data-wow-delay="1.5s">
+      <div class="flex-contact">
+        <li class="border-right">
+          <h4 class="margin-top-reset">Location</h4>
+          <p>197 Plenty Rd,</br>Preston, VIC 3072</p>
 
-            <h4>General Enquiries</h4>
-            <a href="mailto:info@stolberg.com.au">
-              <p class="green-hover">info@stolberg.com.au</p>
-            </a>
-            <a href="tel:+61394951444"><p class="green-hover">03 9495 1444</p></a>
+          <h4>General Enquiries</h4>
+          <a href="mailto:info@stolberg.com.au">
+            <p class="green-hover">info@stolberg.com.au</p>
+          </a>
+          <a href="tel:+61394951444">
+            <p class="green-hover">03 9495 1444</p>
+          </a>
 
-            <h4>Function Enquiries</h4>
-            <a href="mailto:info@stolberg.com.au"><p class="green-hover">info@stolberg.com.au
-            </p></a>
+          <h4>Function Enquiries</h4>
+          <a href="mailto:info@stolberg.com.au">
+            <p class="green-hover">info@stolberg.com.au
+            </p>
+          </a>
 
-            <h4>Opening Hours</h4>
-            <p><b>Monday:</b> 4pm to 11pm</br>
-              <b>Tuesday:</b> 12pm to Late</br>
-              <b>Wednesday & Thursday:</b> 12pm to 11pm</br>
-              <b>Friday & Saturday:</b> 11:30am to Late</p>
-          </li>
+          <h4>Opening Hours</h4>
+          <p>12pm – Late (7 days a week)</p>
+        </li>
 
-          <li>
-            <h4 class="margin-top-reset">Get In Touch</h4>
-            <form class="form-message" id="ajax-contact" method="post" action="php/mailer.php">
-              <div id="form-messages"></div>
-              <input class="input form-input" type="text" id="name" name="name" required placeholder="Name">
-              <input class="input form-input" type="email" id="email" name="email" required placeholder="Email">
-              <textarea class="input form-input contact-message-box" type="text" id="message" name="message" required placeholder="Message..."></textarea>
-              <input class="button-submit" type="submit" value="Submit" />
-              </button>
-            </form>
-          </li>
-        </div>
-
+        <li>
+          <h4 class="margin-top-reset">Get In Touch</h4>
+          <form class="form-message" id="ajax-contact" method="post" action="php/contact-mailer.php">
+            <div id="contact-form-messages"></div>
+            <input class="input form-input" type="text" id="name" name="name" required placeholder="Name"/>
+            <input class="input form-input" type="email" id="email" name="email" required placeholder="Email"/>
+            <textarea class="input form-input contact-message-box" type="text" id="message" name="message" required placeholder="Message..."></textarea>
+            <button class="button-submit" type="submit" value="Submit">Submit</button>
+          </form>
+        </li>
       </div>
-    </div>
 
-    <div id="map"></div>
+    </div>
+  </div>
+
+  <div id="map"></div>
 
   <div id="footer"></div>
   <!-- Content : End -->
 
 
-
-
+  <!-- Scripts -->
+  <script src="js/scripts.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/vegas.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/contact-app.js"></script>
+  <script src="js/function-app.js"></script>
+  <script src="js/booking-app.js"></script>
 
   <!-- Font Awesome -->
   <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-  <!-- Homepage Slider -->
-  <script src="js/vegas.js"></script>
-
-  <!-- Scripts -->
-  <script src="js/scripts.js"></script>
-  <script src="js/app.js"></script>
-
-  <!-- WOW Animations -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-
-  <!-- WOW Animations init -->
-  <script>
-    wow = new WOW({})
-    wow.init();
-  </script>
-
   <!-- HTML Loads -->
   <script>
-    $(function() {
+    $(function () {
       $("#navigation").load("components/navigation.html");
       $("#social-contact").load("components/social-contact.html");
       $("#booking").load("components/booking.html");
@@ -121,29 +114,7 @@
       $("#footer").load("components/footer.html");
     });
   </script>
+  <script async defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD11q99mIVYG6S18V3lSpwbIZ2cRaAeaYc&libraries=places&callback=initMap"></script>
+</body>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD11q99mIVYG6S18V3lSpwbIZ2cRaAeaYc&libraries=places&callback=initMap"></script>
-  <script>function initMap() {
-    var royalderbyhotel = {
-      lat: -37.7452883,
-      lng: 145.0062684
-    };
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 13,
-      center: royalderbyhotel,
-      scrollwheel: false
-    });
-    var icon = {
-      url: '../img/symbols/map-marker.png',
-      scaledSize: new google.maps.Size(60, 80)
-      // origin: new google.maps.Point(0,0), anchor: new google.maps.Point(50, 60)
-    };
-    var marker = new google.maps.Marker({
-      position: royalderbyhotel,
-      map: map,
-      icon: icon
-    });
-  }</script>
-  </body>
-
-  </html>
+</html>

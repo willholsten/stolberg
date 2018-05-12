@@ -1,3 +1,24 @@
+/****************************************
+  SLICK CAROUSEL
+  *****************************************/
+
+ $(document).ready(function(){
+  $('.single-item').slick({
+    arrows: true
+    
+  });
+});
+
+
+/****************************************
+WOW INIT
+*****************************************/
+
+$(document).ready(function(){
+  wow = new WOW({})
+    wow.init();
+});
+
 
 /****************************************
 NAVIGATION: HAMBURGER
@@ -21,27 +42,21 @@ $(function(){
   });
 });
 
-
-
-
-
-
-
 /****************************************
 NEWSLETTER: SIGN UP
 *****************************************/
 
 $(function(){
   $(".sign-up").click(function(){
-    $(".newsletter-container").fadeIn();
     $("body").css("overflow","hidden");
+    $(".newsletter-container").fadeIn() ;
     $(".nav-bar").fadeOut();
     $(".social-contact").fadeOut();
   });
 });
 
 $(function(){
-  $(".close").click(function(){
+  $(".close, .button-submit").click(function(){
     $(".newsletter-container").fadeOut();
     $("body").css("overflow","visible");
     $(".nav-bar").fadeIn();
@@ -55,19 +70,17 @@ BOOKING
 
 $(function(){
   $(".booking").click(function(){
-  $(".booking-container").fadeIn();
-  $("#logo_img").css("visability","hidden");
-  $("body").css("overflow","hidden");
+  $("body").addClass("overflow-hidden");
+  $(".booking-form-container").fadeIn();
   $(".nav-bar").fadeOut();
   $(".social-contact").fadeOut();
   });
 });
 
 $(function(){
-  $(".close").click(function(){
-  $(".booking-container").fadeOut();
-  $("#logo_img").css("visibility","visible");
-  $("body").css("overflow","visible");
+  $(".close, .button-submit").click(function(){
+  $(".booking-form-container").fadeOut();
+  $("body").removeClass("overflow-hidden");
   $(".nav-bar").fadeIn();
   $(".social-contact").fadeIn();
   });
@@ -78,16 +91,13 @@ $(function(){
 HOMEPAGE: SLIDER
 *****************************************/
 
-$(function($) {
+$(function() {
     $('.home-wrapper').vegas({
         slides: [
+            { src: '../img/page-headers/dessert.jpg' },
             { src: '../img/page-headers/whats-on.jpg' },
-            { src: '../img/page-headers/contact.jpg' },
-            { src: '../img/page-headers/burgers.jpg' },
-            { src: '../img/page-headers/the-front-bar.jpg' },
-            { src: '../img/page-headers/likor-lounge.jpg' },
-            { src: '../img/page-headers/eat-drink.jpg' }
-
+            { src: '../img/page-headers/steak.jpg' },   
+            { src: '../img/page-headers/the-stolberg-room.jpg' }
         ]
     });
 });
@@ -99,28 +109,15 @@ SCROLLED ELEMENTS
 $(function () {
   $(document).scroll(function () {
     var $nav = $(".nav-bar");
+    var $logo = $("#logo_img");
+    var $links = $(".nav-bar a");
+    var $span = $(".nav-bar span");
+    var $button = $(".nav-button");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
-
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $("#logo_img");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
-
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".nav-bar a");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
-
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".nav-button");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    $logo.toggleClass('scrolled', $(this).scrollTop() > $logo.height());
+    $links.toggleClass('scrolled', $(this).scrollTop() > $links.height());
+    $span.toggleClass('scrolled', $(this).scrollTop() > $span.height());
+    $button.toggleClass('scrolled', $(this).scrollTop() > $button.height());
   });
 });
 
@@ -190,3 +187,4 @@ $('a[href*="#"]')
     icon: icon
   });
 }
+

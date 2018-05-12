@@ -7,7 +7,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
-				$name = str_replace(array("\r","\n"),array(" "," "),$name);
+		$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $phone = trim($_POST["phone"]);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $time = trim($_POST["time"]);
@@ -25,7 +25,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "willholsten@gmail.com, mail@willholsten.com";
+        $recipient = "mail@willholsten.com, info@stolberg.com.au";
 
         // Set the email subject.
         $subject = "Reservation: $date";
@@ -40,7 +40,7 @@
         <body>
         <table>
         <tr>
-        <td style='font-size:16px; width: 400px;'><strong>Reservation</strong></td>
+        <td style='font-size:20px; width: 400px;padding-bottom: 10px;'><strong>Reservation</strong></td>
         </tr>
         <tr>
         <td style='font-size:12px; width: 400px;'><strong>Name: </strong>{$name}</td>
@@ -89,7 +89,7 @@
         if (mail($recipient, $subject, $message, $headers)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Our team will get back to shortly";
+            echo "Thank You! Our team will get back to you shortly.";
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);

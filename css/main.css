@@ -13,17 +13,23 @@ GENERAL RESET
   margin: 0;
   padding: 0;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
+
 *:focus {
   outline: none;
 }
+
 html {
   position: relative;
   max-width: 100%;
   min-height: 100%;
 }
+
 body {
   position: relative;
   width: 100%;
@@ -32,12 +38,18 @@ body {
   font-family: 'Montserrat', sans-serif;
   z-index: 0;
   letter-spacing: 1px;
-  background-color: 323238;
+  background-color: #323238;
 }
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
 img {
   width: 100%;
   max-width: 100%;
 }
+
 a {
   margin: 0;
   padding: 0;
@@ -46,32 +58,42 @@ a {
   outline: 0;
   cursor: pointer;
 }
+
 span {
   cursor: pointer;
 }
-a:hover
-, a:active, a:focus {
+
+a:hover,
+a:active,
+a:focus {
   outline: 0;
   transition: 0.2s;
 }
+
 a:hover {
   text-decoration: none;
 }
-ol, ul {
+
+ol,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
   list-style-position: inside !important;
 }
+
 .fa-ul {
   list-style-position: inside !important;
 }
+
 li {
   list-style-type: none;
 }
+
 .desktop-hide {
   display: block;
 }
+
 .no-border {
   border: none;
 }
@@ -79,27 +101,33 @@ li {
 .inline {
   display: inline-block;
 }
+
 .block {
   display: block;
 }
+
 .wow {
-  visibility: : hidden !important;
+  visibility: hidden;
 }
 
 /* Change the white to any color ;) */
+
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #F5F5F5 inset !important;
+  -webkit-box-shadow: 0 0 0 30px #F5F5F5 inset !important;
+  box-shadow: 0 0 0 30px #F5F5F5 inset !important;
 }
 
 /**********************************************
 GENERAL
 **********************************************/
+
 .page-section {
   padding: 40px 10px;
-  z-index: 999 !important;
+  /* z-index: 999 !important; */
   max-width: 100%;
   z-index: 1;
 }
+
 .inner-page-section {
   width: 1200px;
   max-width: 100%;
@@ -108,23 +136,26 @@ GENERAL
   padding: 10px 0px;
   z-index: 1;
 }
+
 #color-overlay {
   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: #323238;
-   opacity: 0.6;
-   z-index: -5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #323238;
+  opacity: 0.5;
+  z-index: -5;
 }
 
 .center {
   text-align: center;
 }
+
 .left {
   text-align: left;
 }
+
 .auto {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -143,17 +174,23 @@ GENERAL
   margin-top: 20px;
 }
 
-.inlineLinks > a, .inlineLinks > span {
+.inlineLinks>a,
+.inlineLinks>span {
   display: inline-block;
-  padding-right: 10px;
+  margin-right: 5px;
   color: #7daf99;
   text-transform: uppercase;
   font: 600 12px 'Montserrat', sans-serif;
   padding-bottom: 10px;
+  transition: 0.2s;
+}
+
+.inlineLinks a:last-child {
+  margin-right: 0px !important;
 }
 
 .box-shadow {
-  box-shadow: 0px 0px 10px rgba(0,0,0,.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
 }
 
 /**********************************************
@@ -168,6 +205,7 @@ h1 {
   color: white;
   font: 600 24px/36px 'Montserrat', Helvetica, sans-serif;
 }
+
 h2 {
   text-align: center;
   letter-spacing: 2px;
@@ -177,6 +215,7 @@ h2 {
   margin: 0;
   margin-bottom: 20px;
 }
+
 h3 {
   text-align: left;
   color: white;
@@ -186,6 +225,7 @@ h3 {
   text-transform: uppercase;
   font: 600 16px 'Montserrat', sans-serif;
 }
+
 h4 {
   text-align: left;
   letter-spacing: 1px;
@@ -195,6 +235,7 @@ h4 {
   margin: 20px 0;
   margin-bottom: 10px
 }
+
 h5 {
   display: inline-block;
   text-align: left;
@@ -203,6 +244,7 @@ h5 {
   font: 400 12px/26px 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
+
 p {
   margin: 0;
   letter-spacing: 0.5px;
@@ -211,12 +253,15 @@ p {
   text-transform: none;
   padding: 3px 0;
 }
+
 .white {
   color: white;
 }
+
 .italic p {
   font-style: italic;
 }
+
 .underline {
   color: white;
   text-decoration: underline;
@@ -225,6 +270,7 @@ p {
 /*******************************
 BUTTONS
 ********************************/
+
 .button-container {
   display: block;
 }
@@ -265,6 +311,7 @@ BUTTONS
   letter-spacing: 1px;
   text-transform: uppercase;
   z-index: 999 !important;
+  opacity: .85;
 }
 
 .button-submit {
@@ -281,16 +328,18 @@ BUTTONS
   text-transform: uppercase;
   letter-spacing: 1px;
   background: none;
-  border-bottom: 2px solid rgba(255,255,255,0);
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
 /**********************************************
 HOVERS
 **********************************************/
+
 .opacity:hover {
-  opacity: 0.8 !important;
+  opacity: 1 !important;
   transition: 0.2s;
 }
+
 .green-hover:hover {
   color: #7daf99;
   transition: 0.2s;
@@ -308,19 +357,28 @@ HOVERS
   border-bottom: 2px solid #7daf99;
 }
 
-.nav-bar a.scrolled:hover {
+.nav-bar a.scrolled:hover,
+.nav-bar span.scrolled:hover {
   color: #7daf99 !important;
   transition: 0.2s;
+}
+
+.inlineLinks a:hover {
+  transition: 0.2s;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #7daf99;
 }
 
 /**********************************************
 NAVIGATION
 **********************************************/
+
 .nav-bar {
   position: fixed;
-  left: 0; right: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   padding: 17px 20px;
@@ -332,9 +390,9 @@ NAVIGATION
   width: auto;
 }
 
-.nav-bar a, .nav-bar span {
-  display: flex;
-  justify-content:center;
+.nav-bar a,
+.nav-bar span {
+  justify-content: center;
   width: 110px;
   padding: 10px;
   font-weight: bold;
@@ -351,6 +409,7 @@ NAVIGATION
   color: white;
   z-index: 999 !important;
 }
+
 .nav-button {
   position: fixed;
   top: 15px;
@@ -379,18 +438,21 @@ NAVIGATION
 .mobile-menu-container {
   display: none;
 }
+
 .mobile-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  background-color: rgba(0,0,0,.95);
-  height: 100vh;
+  background-color: rgba(0, 0, 0, .95);
+  height: 100%;
   width: 100%;
   padding-left: 50px;
   z-index: 900;
 }
-.mobile-menu a, .mobile-menu span {
+
+.mobile-menu a,
+.mobile-menu span {
   display: flex;
   padding: 20px 0;
   color: white;
@@ -400,58 +462,64 @@ NAVIGATION
 
 #logo_img {
   position: absolute;
-  top: 5; left:0; right: 0;
-  content: url('../img/symbols/logo-stolberg.svg');
-  width: 160px;
+  top: 5;
+  left: 0;
+  right: 0;
+  width: 70px;
   padding: 10px;
   z-index: 800;
   margin: 0 auto;
+  opacity: 0.85;
 }
+
 @-webkit-keyframes fadeIn {
   0% {
-      opacity: 0;
-      transform: translateX(-200px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+    opacity: 0;
+    transform: translateX(-200px);
   }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @-moz-keyframes fadeIn {
   0% {
-      opacity: 0;
-      transform: translateX(-200px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+    opacity: 0;
+    transform: translateX(-200px);
   }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes fadeIn {
   0% {
-      opacity: 0;
-      transform: translateX(-200px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+    opacity: 0;
+    transform: translateX(-200px);
   }
-.fade-in {
-  opacity:0;
-  opacity: 1 \9; /*just in case ie*/
-  -webkit-animation:fadeIn ease-in 1;
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:0.5s;
-  -moz-animation-duration:0.5s;
-  animation-duration:0.5s;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
+
+.fade-in {
+  opacity: 0;
+  opacity: 1 \9;
+  /*just in case ie*/
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
 .one {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
@@ -463,21 +531,25 @@ NAVIGATION
   -moz-animation-delay: .2s;
   animation-delay: .2s;
 }
+
 .three {
   -webkit-animation-delay: .3s;
   -moz-animation-delay: .3s;
   animation-delay: .3s;
 }
+
 .four {
   -webkit-animation-delay: .4s;
   -moz-animation-delay: .4s;
   animation-delay: .4s;
 }
+
 .five {
   -webkit-animation-delay: .5s;
   -moz-animation-delay: .5s;
   animation-delay: .5s;
 }
+
 .six {
   -webkit-animation-delay: .6s;
   -moz-animation-delay: .6s;
@@ -489,7 +561,7 @@ NAVIGATION SCROLLED
 **********************************************/
 
 .nav-button.scrolled {
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255, 255, 255, .9);
   color: black;
   transition: 0.2s;
   border-radius: 5px;
@@ -499,9 +571,12 @@ NAVIGATION SCROLLED
   color: black !important;
   margin-top: 5px;
 }
+
 .nav-bar span.scrolled {
   color: black !important;
+  margin-top: 5px;
 }
+
 .nav-bar i.scrolled {
   color: black !important;
 }
@@ -509,31 +584,36 @@ NAVIGATION SCROLLED
 /**********************************************
 SOCIAL / CONTACT STRIP
 **********************************************/
+
 .social-contact {
   position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  bottom: 0; left: 0; right: 0;
-  background-color: rgba(255,255,255,.9);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: rgba(255, 255, 255, .9); */
   width: 100%;
-  align: center;
   height: 60px;
   align-content: center;
   margin: auto;
   padding: 0 10px;
   font-size: 16px;
   font-weight: 100;
-  color: black;
+  color: white;
 }
+
 .social {
   display: flex;
   align-items: center;
 }
+
 .social span {
   font-size: 12px;
   font-weight: 600;
 }
+
 .hours {
   display: flex;
   text-align: center;
@@ -541,6 +621,7 @@ SOCIAL / CONTACT STRIP
   align-self: flex-end;
   margin-bottom: 17px;
 }
+
 .hours span {
   display: block;
   color: white;
@@ -548,16 +629,19 @@ SOCIAL / CONTACT STRIP
   line-height: 24px;
   cursor: default;
 }
+
 .contact {
   display: flex;
   align-items: center;
   text-align: right
 }
-.social a, .social span, .contact a {
+
+.social a,
+.social span,
+.contact a {
   padding: 0px 12px;
+  color: white;
 }
-
-
 
 /**********************************************
 PAGE HEADERS
@@ -565,9 +649,10 @@ PAGE HEADERS
 
 .page-banner-content h2 {
   color: white;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 0 15px;
 }
+
 .page-header p {
   color: white;
   width: 920px;
@@ -577,35 +662,45 @@ PAGE HEADERS
   text-align: center;
   font-family: 'Lekton';
 }
+
 .fa-angle-double-down {
   color: white;
   font-size: 40px;
   margin-top: 20px;
 }
+
 .eat-drink-header {
   background: url("../img/page-headers/eat-drink.jpg");
 }
+
 .whats-on-header {
   background: url("../img/page-headers/whats-on.jpg");
 }
+
 .functions-header {
   background: url("../img/page-headers/functions.jpg");
 }
+
 .gallery-header {
   background: url("../img/page-headers/gallery.jpg");
 }
+
 .contact-header {
   background: url("../img/page-headers/contact.jpg");
 }
+
 .likor-lounge-header {
   background: url("../img/page-headers/likor-lounge.jpg");
 }
+
 .the-mahogany-room-header {
   background: url("../img/page-headers/the-mahogany-room.jpg");
 }
+
 .the-front-bar-header {
   background: url("../img/page-headers/the-front-bar.jpg");
 }
+
 .the-stolberg-room-header {
   background: url("../img/page-headers/the-stolberg-room.jpg");
 }
@@ -623,7 +718,6 @@ PAGE HEADERS
   background-position: center;
 }
 
-
 /**********************************************
 BACKGROUND COLOURS
 **********************************************/
@@ -631,13 +725,19 @@ BACKGROUND COLOURS
 .grey-bg {
   background-color: #f5f5f5;
 }
+
 .white-bg {
   background-color: white;
+}
+
+.black-bg {
+  background-color: black;
 }
 
 /**********************************************
 FORMS(GENERAL)
 **********************************************/
+
 .form {
   font-size: 0px;
   margin: 0 auto;
@@ -645,18 +745,33 @@ FORMS(GENERAL)
   width: 920px;
   max-width: 100%;
 }
+
 input {
   -webkit-appearance: none;
   box-shadow: none !important;
   border-radius: 2px;
 }
+
 textarea {
   border: 1px solid #d9d9d9;
   -webkit-appearance: none;
   box-shadow: none !important;
   font: 300 14px 'Montserrat', sans-serif;
 }
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: 0.2s;
+  color: #7daf99;
+  cursor: hand;
+}
+
 .success {
+  display: block;
   padding: 20px 15px;
   width: 100%;
   text-align: left;
@@ -666,10 +781,12 @@ textarea {
   background-color: #dff0d8;
   border: 1px solid #9cc37a;
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
+
 .error {
+  display: block;
   padding: 20px 15px;
   width: 100%;
   text-align: left;
@@ -679,35 +796,84 @@ textarea {
   background-color: #f2dede;
   border: 1px solid rgba(185, 74, 72, 0.3);
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
+
+.booking-success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 15px;
+  width: 100%;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  font: 300 14px 'Montserrat', sans-serif;
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #9cc37a;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  z-index: 999;
+}
+
+.booking-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 15px;
+  width: 100%;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  font: 300 14px 'Montserrat', sans-serif;
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  z-index: 999;
+}
+
 /*******************
 NEWSLETTER FORM
 ********************/
+
 .newsletter-container {
-  position: fixed;
   display: none;
-  z-index: 999;
-  left: 0; right: 0; top: 0;
 }
+
 .newsletter {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  background-color: white;
-  height: 100vh;
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .65);
+  height: 100%;
+  width: 100%;
+  z-index: 900;
+  margin: 0 auto;
 }
+
 .newsletter-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
   width: 450px;
   max-width: 100%;
   padding: 0 20px;
+  background: white;
 }
+
 .newsletter-content h3 {
   color: #454545;
 }
+
 .newsletter-content p {
   margin: 20px 5px 40px;
   color: black;
@@ -717,106 +883,126 @@ NEWSLETTER FORM
 /*******************
 BOOKING FORM
 ********************/
-.booking-container {
-  position: fixed;
+
+.booking-form-container {
   display: none;
-  z-index: 999;
-  left: 0; right: 0; top: 0;
+  max-width: 100%;
 }
+
 .booking-form {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  background-color: white;
-  height: 100vh;
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0, 0, 0, .65);
+  height: 100%;
+  width: 100%;
+  z-index: 800;
 }
+
+.booking-logo {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  width: 100px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
 .booking-form-content {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
   width: 450px;
   max-width: 100%;
-  padding: 0 20px;
+  padding: 20px;
+  background-color: white;
+  overflow: scroll;
 }
+
 .booking-form-content h3 {
   color: #454545;
+  margin: 0 auto;
 }
+
 .booking-form-content p {
-  margin: 20px auto;
-  color: black;
+  margin: 0 auto 20px;
+  color: #454545;
   text-align: center;
 }
 
-.close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 20px;
-  opacity: 0.8;
-  transition: 0.2s;
-  color: #7daf99;
-}
 #booking-message {
   min-height: 100px;
+  max-width: 100%;
 }
 
 /*******************
 FUNCTIONS FORM
 ********************/
+
 .function-form {
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
 }
+
 .form-input {
   width: 100%;
   margin: 5px 0px;
   padding: 15px 15px;
-  color: #999;
+  color: #666;
   border: 1px solid #e9e9e9;
-  background: #f5f5f5;;
+  background: #f5f5f5;
   border-radius: 0px;
   font: 500 16px 'Lekton', sans-serif;
   transition: 0.2s;
   letter-spacing: 1px;
 }
+
 .form-input::placeholder {
-  color: #888;
+  color: #b7b7b7;
 }
+
 .form-input:focus {
   border: 1px solid #ccc;
   transition: 0.2s;
 }
+
 .form-message {
   width: 100%;
   font-size: 16px;
 }
+
 #message {
   min-height: 200px;
 }
+
 .function-select {
   display: block;
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
-  height: 60px;
   font: 500 16px 'Lekton', sans-serif;
   padding-left: 15px;
   width: 100%;
 }
 
 .function-select:first-child {
-  color: #888 !important;
+  color: #b7b7b7 !important;
 }
 
 .form-dropdown {
-  position:relative;
+  position: relative;
   display: block;
   padding: 0;
 }
+
 .form-dropdown::after {
   position: absolute;
-  top: 20px;
+  top: 12px;
   right: 20px;
   color: #7daf99;
   content: "\f0dd";
@@ -824,6 +1010,7 @@ FUNCTIONS FORM
   font-size: 18px;
   pointer-events: none;
 }
+
 /*******************
 CONTACT FORM
 ********************/
@@ -834,6 +1021,7 @@ CONTACT FORM
   min-height: 200px;
   margin: 5px;
 }
+
 .contact-message-box {
   width: 100%;
   font-size: 16px;
@@ -842,10 +1030,12 @@ CONTACT FORM
 /**********************************************
 HOMEPAGE
 **********************************************/
-.home-wrapper {
+
+/* .home-wrapper {
   height: 100% !important;
   width: 100%;
-}
+} */
+
 .home-content {
   position: relative;
   display: flex;
@@ -858,14 +1048,21 @@ HOMEPAGE
   overflow: hidden;
   z-index: -1;
 }
+
 .vegas-wrapper {
   z-index: 5;
 }
 
+.home-logo {
+  width: 300px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
 
 /**********************************************
 PAGE: EAT & DRINK
 **********************************************/
+
 .flex-eat-drink {
   display: flex;
   flex-direction: row;
@@ -873,34 +1070,42 @@ PAGE: EAT & DRINK
   justify-content: center;
   padding-bottom: 15px;
 }
+
 .eat-drink-img {
   width: 100%;
   height: 100%;
   overflow: hidden;
   height: 250px;
 }
+
+.eat-drink-img img {
+  min-height: 100%;
+  object-fit: cover;
+}
+
 .eat-drink-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
   width: 100%;
   padding: 30px 15px;
   height: auto;
   overflow: hidden;
   vertical-align: middle;
   background: white;
-  box-shadow: 0px 0px 10px rgba(0,0,0,.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
 }
 
 /**********************************************
 PAGE: WHAT'S ON
 **********************************************/
+
 .flex-whats-on {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .flex-whats-on li {
   display: flex;
   width: 100%;
@@ -908,46 +1113,30 @@ PAGE: WHAT'S ON
   flex-direction: column;
   background-color: white;
   padding-bottom: 20px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,.05);
-}
-.flex-whats-on li > h3 {
-  color: #444;
-  text-align: center;
-  margin: 0 20px;
-}
-.flex-whats-on li > p {
-  text-align: center;
-  margin: 0 20px;
-}
-.whats-on-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  text-align: center;
-  color: white;
-}
-.whats-on-block > h2 {
-  text-align: center;
-  padding: 10px;
-  display: inline;
-  color: #7daf99;
-  margin-bottom: 40px;
-}
-.icon {
-  display: block;
-  margin: 60px auto 20px;
-  font-size: 40px;
-  color: #7daf99;
-}
-.whats-on-block > i {
-  font-size: 60px !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
 }
 
+.flex-whats-on li>h3 {
+  color: #444;
+  text-align: left;
+  margin: 20px auto 0;
+}
+
+.flex-whats-on li>h4 {
+  text-align: left;
+  margin: 0 auto 20px;
+}
+
+.flex-whats-on li>p {
+  text-align: center;
+  margin: 0 20px;
+  line-height: 16px;
+}
 
 /**********************************************
 PAGE: FUNCTIONS
 **********************************************/
+
 .flex-functions {
   display: flex;
   flex-direction: row;
@@ -955,6 +1144,7 @@ PAGE: FUNCTIONS
   justify-content: center;
   padding-bottom: 15px;
 }
+
 .functions-img {
   width: 100%;
   height: 100%;
@@ -962,6 +1152,12 @@ PAGE: FUNCTIONS
   object-fit: cover;
   height: 250px;
 }
+
+.functions-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .functions-copy {
   display: flex;
   flex-direction: column;
@@ -973,9 +1169,8 @@ PAGE: FUNCTIONS
   overflow: hidden;
   vertical-align: middle;
   background: white;
-  box-shadow: 0px 0px 10px rgba(0,0,0,.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
 }
-
 
 /**********************************************
 PAGE: GALLERY
@@ -986,9 +1181,25 @@ PAGE: GALLERY
   margin: 0 auto;
   max-width: 100%;
 }
+
+.image-box {
+  width: 28% !important;
+  margin: 5px !important;
+}
+
+.fadein {
+  animation: none;
+}
+
+.image-wrapper>div {
+  width: 30% !important;
+  max-width: 30% !important;
+}
+
 iframe {
   max-width: 100% !important;
 }
+
 .figure {
   width: 30% !important;
   max-width: 30% !important;
@@ -997,20 +1208,25 @@ iframe {
   padding: 2px !important;
   border: none !important;
 }
+
 /**********************************************
 PAGE: FUNCTION ROOMS
 **********************************************/
+
 .function-room-images {
   position: relative;
   font-size: 0px;
 }
+
 .function-room-images img {
   display: inline-block;
   object-fit: cover;
   height: auto;
   padding: 10px 0;
 }
-.function-room-1, .function-room-2 {
+
+.function-room-1,
+.function-room-2 {
   width: 100%;
 }
 
@@ -1022,7 +1238,7 @@ PAGE: FUNCTION ROOMS
   justify-content: center;
 }
 
-.flex-function > li {
+.flex-function>li {
   width: 100%;
   text-align: left;
   padding: 15px;
@@ -1030,13 +1246,30 @@ PAGE: FUNCTION ROOMS
   margin: 5px 0;
   background-color: white;
 }
+
 .flex-function h2 {
   text-align: left;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #7daf99;
+  font-size: 18px;
+}
+
+.single-item {
+  padding: 10px;
+  margin: 0 10px;
 }
 
 /**********************************************
 PAGE: CONTACT
 **********************************************/
+
 .flex-contact {
   display: flex;
   flex-direction: row;
@@ -1074,11 +1307,12 @@ FOOTER
   font: 300 12px 'Montserrat', sans-serif;
   z-index: 999;
 }
+
 .footer-content {
   width: 1200px;
   max-width: 100%;
   font-size: 0px;
-  padding: 30px 0  0;
+  padding: 30px 0 0;
   text-align: center;
   margin: 0 auto;
 }
@@ -1094,20 +1328,24 @@ FOOTER
   padding: 10px 0px;
   border-right: 1px solid #444;
 }
+
 .footer-block h5 {
   margin: 0px auto;
   color: white;
 }
+
 .footer p {
   color: #999;
   font-size: 12px;
 }
+
 .partner img {
   display: block;
   width: 200px;
   text-align: center;
   margin: 30px auto 0;
 }
+
 .footer-copyright {
   padding: 20px;
   vertical-align: middle;
@@ -1118,9 +1356,11 @@ FOOTER
 /**********************************************
 HIDE
 **********************************************/
+
 .hide {
   display: none;
 }
+
 .mobile-hide {
   display: none !important;
 }

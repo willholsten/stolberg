@@ -23,8 +23,15 @@ $(function() {
 		})
 		.done(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
+			$(formMessages).removeClass('booking-error');
+			$(formMessages).addClass('booking-success');
+
+			setTimeout(RemoveClass, 3000);
+		
+		function RemoveClass() {
+
+			$(formMessages).hide();
+		}
 
 			// Set the message text.
 			$(formMessages).text(response);
@@ -32,10 +39,19 @@ $(function() {
 			// Clear the form.
 			$('#name, #phone, #email, #date, #time, #guests, #message').val('');
 		})
+
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
-			$(formMessages).removeClass('success');
-			$(formMessages).addClass('error');
+			$(formMessages).removeClass('booking-success');
+			$(formMessages).addClass('booking-error');
+
+			setTimeout(RemoveClass, 3000);
+		
+		function RemoveClass() {
+
+			$(formMessages).hide();
+		}
+	
 
 			// Set the message text.
 			if (data.responseText !== '') {

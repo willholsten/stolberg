@@ -7,7 +7,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
-				$name = str_replace(array("\r","\n"),array(" "," "),$name);
+		$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
 
@@ -21,7 +21,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "willholsten@gmail.com";
+        $recipient = "mail@willholsten.com, info@stolberg.com.au";
 
         // Set the email subject.
         $subject = "General Enquiry: $name";
@@ -36,13 +36,16 @@
         <body>
         <table>
         <tr>
-        <td style='font-size:16px; width: 400px;'><strong>General Enquiry</strong></td>
+        <td style='font-size:20px; width: 400px;padding-bottom: 10px;'><strong>General Enquiry</strong></td>
         </tr>
         <tr>
         <td style='font-size:12px; width: 400px;'><strong>Name: </strong>{$name}</td>
         </tr>
         <tr>
         <td style='font-size:12px; width: 400px;'><strong>Email: </strong>{$email}</td>
+        </tr>
+        <tr>
+        <td style='font-size:12px; width: 400px;'><strong>Message:</strong></td>
         </tr>
         <tr>
         <td style='font-size:12px; width: 400px;'>{$message}</td>

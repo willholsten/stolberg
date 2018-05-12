@@ -1,10 +1,11 @@
 <html>
 
 <head>
-  <title>The Stolberg</title>
+  <title>What's On | The Stolberg</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="" />
+  <meta name="description" content="Discover What's On at The Stolberg - from Trivia & Family Nights and of course our daily specials."
+  />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
@@ -12,99 +13,93 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalise.css">
   <link rel="stylesheet" href="css/vegas.css">
+  <link rel="stylesheet" href="css/slick/slick.css">
+  <link rel="stylesheet" href="css/slick/slick-theme.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animate.css">
 
   <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 
 
-
   <!-- Content : Start -->
-  <a id="navigation"></a>
+  <div id="navigation"></div>
+  <div id="newsletter"></div>
+  <div id="booking"></div>
 
-    <div class="page-header whats-on-header">
-        <h1 class="wow fadeInDown" data-wow-delay="1.5s">What's On</h1>
-        <p class="wow fadeInUp" data-wow-delay="1.5s">Check out all our nightly specials here at The Stolberg. We guarantee we will offer you something special each night of the week and some of these specials we think are absolute rippers.</p>
-        <a href="#page-top"><i class="fas fa-angle-double-down wow animated fadeInDown green-hover" data-wow-duration="2s" data-wow-delay="2s"></i></a>
+  <div class="page-header whats-on-header wow fadeIn">
+    <h1 class="wow fadeInDown" data-wow-delay="1.5s">What's On</h1>
+    <p class="wow fadeInUp" data-wow-delay="1.5s">Check out all our weekly specials below. From Accoustic sessions to Family Night, I’m sure you will find the right night for you!</p>
+    <a href="#page-top">
+      <i class="fas fa-angle-double-down wow animated fadeInDown green-hover" data-wow-duration="2s" data-wow-delay="2s"></i>
+    </a>
 
-      <div id="color-overlay"></div>
-      <div id="booking"></div>
-      <div id="newsletter"></div>
-      <div id="social-contact"></div>
-    </div>
+    <div id="color-overlay"></div>
+    <div id="social-contact"></div>
+  </div>
 
-    <a class="anchor" id="page-top"></a>
-    <div class="page-section grey-bg">
-      <div class="inner-page-section">
+  <a class="anchor" id="page-top"></a>
+  <div class="page-section grey-bg">
+    <div class="inner-page-section">
 
-        <ul class="flex-whats-on">
-
-          <li>
-            <div class="whats-on-block">
-              <i class="icon fas fa-video"></i>
-              <h2>Monday</h2>
-            </div>
-            <h3>Family Night</h3>
-            <p>Kids eat free with kids movies showing in The Mahogany Room.</p>
-          </li>
-          <li>
-            <div class="whats-on-block">
-              <i class="icon fas fa-question"></i>
-              <h2>Wednesday</h2>
-            </div>
-            <h3>Trivia Night</h3>
-            <p>$15 Parma / Eggplant Parma</p>
-          </li>
-          <li>
-            <div class="whats-on-block">
-              <i class="icon fas fa-utensils"></i>
-              <h2>Thursday</h2>
-            </div>
-            <h3>Steak Night</h3>
-            <p>200g Porterhouse $17</p>
-            <p>250g Scotch Fillet $19</p>
-            <p>250g Eye Fillet $22</p>
-            <p>All served with coleslaw, chips and choice of sauce.</p>
-          </li>
-          <li>
-            <div class="whats-on-block">
-              <i class="icon fas fa-beer"></i>
-              <h2>Friday</h2>
-            </div>
-            <h3>Acoustic Sessions</h3>
-            <p>$6 pints of all tap beer til 6pm</p>
-            <p>$7 pints to 7pm</p>
-            <p>$8 pints to 8pm</p>
-            <p>Live music in the front bar from 7.30pm</p>
-          </li>
-          <li>
-            <div class="whats-on-block">
-              <i class="icon fas fa-music"></i>
-              <h2>Sunday</h2>
-            </div>
-            <h3>Sunday Session</h3>
-            <p>$12 Jugs of Melbourne Bitter 12pm-5pm</p>
-          </li>
-          <li>
-            <div class="whats-on-block">
-              <i class="icon fas fa-key"></i>
-              <h2>Everyday</h2>
-            </div>
-            <h3>Show your room key...</h3>
+      
+      <ul class="flex-whats-on">
+        <li class="wow fadeInUp" data-wow-delay="1.5s">
+          <img src="img/whats-on/monday.jpg" alt="Whats On - Monday">
+          <h3>Monday</h3>
+          <h4>Family Night</h4>
+          <p>Kids eat free with kids movies showing in The Mahogany Room.</p>
+        </li>
+        <li class="wow fadeInUp" data-wow-delay="1.5s">
+          <img src="img/whats-on/wednesday.jpg" alt="Whats On - Wednesday">
+          <h3>Wednesday</h3>
+          <h4>Trivia Night</h4>
+          <p>$15 Parma / Eggplant Parma</p>
+        </li>
+        <li class="wow fadeInUp" data-wow-delay="1.5s">
+          <img src="img/whats-on/thursday.jpg" alt="Whats On - Thursday">
+          <h3>Thursday</h3>
+          <h4>Steak Night</h4>
+          <p>200g Porterhouse $17</p>
+          <p>250g Scotch Fillet $19</p>
+          <p>250g Eye Fillet $22</p>
+          <p>All served with coleslaw, chips and choice of sauce.</p>
+        </li>
+        <li class="wow fadeInUp" data-wow-delay="1.5s">
+          <img src="img/whats-on/friday.jpg" alt="Whats On - Friday">
+          <h3>Friday</h3>
+          <h4>Acoustic Sessions</h4>
+          <p>$6 pints of all tap beer til 6pm</p>
+          <p>$7 pints to 7pm</p>
+          <p>$8 pints to 8pm</p>
+          <p>Live music in the front bar from 7.30pm</p>
+        </li>
+        <li class="wow fadeInUp" data-wow-delay="1.5s">
+          <img src="img/whats-on/sunday.jpg" alt="Whats On - Sunday">
+          <h3>Sunday</h3>
+          <h4>Sunday Session</h4>
+          <p>$12 Jugs of Melbourne Bitter 12pm-5pm</p>
+        </li>
+        <li class="wow fadeInUp" data-wow-delay="1.5s">
+          <img src="img/whats-on/everyday.jpg" alt="Whats On - Everday">
+          <h3>Everyday</h3>
+          <h4>Show your room key...</h3>
             <p>...from any local hotel / motel and get 5% off food and beverage</p>
-          </li>
+        </li>
+      </ul>
 
-        </ul>
 
-      </div>
+
+
+
     </div>
+  </div>
   <div id="footer"></div>
   <!-- Content : End -->
 
@@ -112,28 +107,21 @@
 
 
 
+  <!-- Scripts -->
+  <script src="js/scripts.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/vegas.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/contact-app.js"></script>
+  <script src="js/function-app.js"></script>
+  <script src="js/booking-app.js"></script>
+
   <!-- Font Awesome -->
   <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-  <!-- Homepage Slider -->
-  <script src="js/vegas.js"></script>
-
-  <!-- Scripts -->
-  <script src="js/scripts.js"></script>
-  <script src="js/app.js"></script>
-
-  <!-- WOW Animations -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-
-  <!-- WOW Animations init -->
-  <script>
-    wow = new WOW({})
-    wow.init();
-  </script>
-
   <!-- HTML Loads -->
   <script>
-    $(function() {
+    $(function () {
       $("#navigation").load("components/navigation.html");
       $("#social-contact").load("components/social-contact.html");
       $("#booking").load("components/booking.html");

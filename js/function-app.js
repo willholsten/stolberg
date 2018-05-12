@@ -2,10 +2,10 @@
 $(function() {
 
 	// Get the form.
-	var form = $('#ajax-contact');
+	var form = $('#ajax-function');
 
 	// Get the messages div.
-	var formMessages = $('#form-messages');
+	var formMessages = $('#function-form-message');
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {
@@ -26,16 +26,26 @@ $(function() {
 			$(formMessages).removeClass('error');
 			$(formMessages).addClass('success');
 
+			setTimeout(RemoveClass, 3000);
+		function RemoveClass() {
+			$(formMessages).hide();
+		}
+
 			// Set the message text.
 			$(formMessages).text(response);
 
 			// Clear the form.
-			$('#name, #phone, #email, #occasion, #date, #time, #guests, #message').val('');
+			$('#name, #phone, #email, #occasion, #date, #time, #guests, #roomOption, #message').val('');
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
 			$(formMessages).removeClass('success');
 			$(formMessages).addClass('error');
+
+			setTimeout(RemoveClass, 3000);
+		function RemoveClass() {
+			$(formMessages).hide();
+		}
 
 			// Set the message text.
 			if (data.responseText !== '') {

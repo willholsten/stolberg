@@ -3,356 +3,364 @@ MEDIA QUERY: 481PX
 **********************************************************/
 
 @media screen and (min-width: 481px) {
-
+  .tablet-hide {
+    display: none;
+  }
   .flex-whats-on li {
-    width: 50%;
+    width: 45%;
     margin: 10px;
+  }
+  .eat-drink-img {
+    height: 350px;
+  }
+  .functions-img {
+    height: 350px;
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**********************************************************
-MEDIA QUERY: 760PX
+ TABLET - MEDIA QUERY: 760PX
 **********************************************************/
 
 @media screen and (min-width: 760px) {
-/**************************
+  /**************************
 GENERAL
 **************************/
-.mobile-hide {
-  display: block !important;
-}
-.desktop-hide {
-  display: none;
-}
-.tablet-hide {
-  display: none;
-}
-.no-border {
-  border: none;
-}
-.border-left {
-  border-left: 1px solid #e5e5e5;
-}
-.border-right {
-  border-right: 1px solid #e5e5e5;
-}
-.no-margin {
-  margin: 0px;
-}
-.right {
-  text-align: right !important;
-  padding-right: 50px;
-}
-.flex-reverse {
-  flex-direction: row-reverse;
-}
-
-/*******************************
+  .no-border {
+    border: none;
+  }
+  .border-left {
+    border-left: 1px solid #e5e5e5;
+  }
+  .border-right {
+    border-right: 1px solid #e5e5e5;
+  }
+  .no-margin {
+    margin: 0px;
+  }
+  .right {
+    text-align: right !important;
+    padding-right: 50px;
+  }
+  .flex-reverse {
+    flex-direction: row-reverse;
+  }
+  /*******************************
 STRUCTURE
 ********************************/
-.page-section {
-  padding: 50px 10px;
-}
-
-.inner-page-section {
-  /* padding: 50px 0px; */
-}
-
-.inner-page-header {
-  margin: 20px auto 0;
-}
-.half {
-  display: inline-block;
-  flex: 1;
-  width: 50%;
-  max-width: 50%;
-  padding: 0 5px;
-}
-
-.anchor{
-  display: block;
-  height: 80px; /*same height as header*/
-  margin-top: -80px; /*same height as header*/
-}
-.footerSpacer {
-  height: 0;
-}
-
-.border-right {
-  border-right: 1px solid #e5e5e5;
-}
-
-.inlineLinks a, .inlineLinks span {
-  padding-right: 15px;
-}
-
-/*******************************
+  .page-section {
+    padding: 50px 10px;
+  }
+  .inner-page-header {
+    margin: 20px auto 0;
+  }
+  .page-header p {
+    line-height: 22px;
+  }
+  .half {
+    display: inline-block;
+    flex: 1;
+    width: 50%;
+    max-width: 50%;
+    padding: 0 5px;
+  }
+  .footerSpacer {
+    height: 0;
+  }
+  .border-right {
+    border-right: 1px solid #e5e5e5;
+  }
+  .inlineLinks a,
+  .inlineLinks span {
+    margin-right: 15px;
+  }
+  /*******************************
 TEXT
 ********************************/
-h1 {
-  font-size: 44px;
-  line-height: 54px;
-}
-h2 {
-  font: 600 26px/32px 'Montserrat', sans-serif;
-}
-.page-banner-content p {
-  font-size: 16px;
-  line-height: 28px;
-}
-.instagram-width {
-  width: 750px;
-}
-/*******************************
-HEADERS
-********************************/
-.fa-angle-double-down {
-  color: white;
-  font-size: 40px;
-  margin-top: 50px;
-}
-
-/**********************************************
-NAVIGATION
-**********************************************/
-.nav-bar {
-  height: 80px;
-}
-
-#logo_img {
-  position:relative;
-  content: url('../img/symbols/logo-stolberg.svg');
-  top: 0px;
-  width: 200px;
-  padding: 20px;
-  margin: 20px 0 0;
-}
-
-#logo_img.scrolled {
-  content: url('../img/symbols/logo-stolberg-black.svg');
-  width: 160px;
-  margin: 0;
-}
-
-
-/**********************************************
-NAVIGATION SCROLLED
-**********************************************/
-.nav-bar.scrolled {
-  background-color: rgba(255,255,255,1);
-  transition: 0.2s;
-  box-shadow: 0px 1px 1px rgba(0,0,0,.1);
-  z-index: 900;
-  top: 0;
-}
-
-#logo_img.scrolled {
-  display: none;
-}
-
-/*******************************
-SOCIAL / CONTACT STRIP
-********************************/
-.social-contact {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0,0,0,0);
-  padding: 0 20px;
-}
-
-
-.contact {
-  flex-direction: column;
-  align-items: flex-end;
-  align-self: flex-end;
-  margin-bottom: 17px;
-  font-size: 12px;
-  line-height: 24px;
-  width: 300px;
-}
-
-.contact a {
-  padding: 0;
-}
-.social a, .social span, .contact a, .contact p {
-  color: white;
-}
-.social span {
-  font-weight: normal;
-}
-
-.contact-a a {
-  display: inline-block !important;
-  text-align: right;
-}
-
-/*******************************
+  h1 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  h2 {
+    font: 600 26px/32px 'Montserrat', sans-serif;
+  }
+  .page-banner-content p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .instagram-width {
+    width: 750px;
+  }
+  /*******************************
 FORM
 ********************************/
-.form-flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.form-input {
-  padding: 20px 15px;
-  margin: 5px 0px;
-}
-.form-message {
-  margin: 5px;
-  flex-grow: 2;
-}
-.contact-message-box {
-  margin: 5px auto;
-  flex-grow: 2;
-}
-
-.newsletter-content, .booking-form-content {
-  position: relative;
-}
-
-.close {
-  top: 0; right: 0;
-}
-
-
-/**********************************************
+  .form-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .form-input {
+    padding: 15px;
+    margin: 5px 0px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .function-select {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .form-message {
+    margin: 5px;
+    flex-grow: 2;
+  }
+  .contact-message-box {
+    margin: 5px auto;
+    flex-grow: 2;
+  }
+  .newsletter-content,
+  .booking-form-content {
+    position: relative;
+    padding: 40px;
+    height: unset;
+  }
+  .close {
+    font-size: 25px;
+    top: 10;
+    right: 10;
+  }
+  .newsletter-content {
+    padding: 60px 40px;
+  }
+  /**********************************************
 PAGE: HOMEPAGE
 **********************************************/
-.slider-content {
-  top: 40%;
-  height: 100px;
-}
-
-.slider-links {
-  margin-bottom: 40px;
-}
-
-.slider-links h2 {
-  display: inline-block;
-  padding-right: 40px;
-}
-
-.slider-content p {
-  font-size: 14px;
-  line-height: 32px;
-}
-
-/**********************************************
-PAGE: EAT & DRINK
-**********************************************/
-.flex-eat-drink {
-  padding-bottom: 60px;
-}
-.eat-drink-img {
-  max-width: 55%;
-  min-height: 400px;
-  height: 400px;
-  width: 600px;
-  max-height: 600px;
-}
-
-.eat-drink-img img {
-  min-height: 100%;
-  object-fit: cover;
-}
-.eat-drink-copy {
-  width: auto;
-  max-width: 45%;
-  padding: 40px;
-  height: 400px;
-}
-
-/**********************************************
+  .home-logo {
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+  /**********************************************
 PAGE: WHAT'S ON
 **********************************************/
-
-.flex-whats-on li {
-  width: 33%;
-  max-width: 350px;
-}
-
-/**********************************************
-PAGE: FUNCTIONS
-**********************************************/
-
-.flex-functions {
-  padding-bottom: 60px;
-}
-.functions-img {
-  max-width: 55%;
-  min-height: 400px;
-  height: 400px;
-  width: 600px;
-  max-height: 600px;
-}
-.functions-img img {
-  height: 100%;
-  object-fit: cover;
-}
-.functions-copy {
-  width: auto;
-  max-width: 45%;
-  padding: 40px;
-  height: 400px;
-}
-/**********************************************
+  .flex-whats-on li {
+    width: 30%;
+  }
+  /**********************************************
 PAGE: FUNCTION ROOM
 **********************************************/
-.function-room-images {
-  font-size: 0px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: auto;
-  max-height: 400px;
-}
-/**********************************************
-FUNCTION ROOM
-**********************************************/
-.function-room-images {
-  flex-direction: row;
-}
-.function-room-1 {
-  width: 68%;
-}
-.function-room-2 {
-  width: 30%;
-}
-
-.flex-function {
-  padding: 0px 20px;
-  background-color: white;
-}
-.flex-function li {
-  background-color: none;
-  width: 50%;
-  padding: 0 30px;
-}
-/**********************************************
+  .function-room-images {
+    font-size: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    max-height: 400px;
+  }
+  .function-room-1 {
+    width: 68%;
+  }
+  .function-room-2 {
+    width: 30%;
+  }
+  .flex-function {
+    padding: 30px 20px;
+    background-color: white;
+  }
+  .flex-function li {
+    background-color: none;
+    width: 50%;
+    padding: 0 30px;
+  }
+  /**********************************************
 CONTACT
 **********************************************/
-.flex-contact li {
-  width: 50%;
-  padding: 0px 30px;
+  .flex-contact li {
+    width: 50%;
+    padding: 0px 30px;
+  }
 }
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**********************************************************
-MEDIA QUERY: 1020PX
+DESKTOP - MEDIA QUERY: 920PX
 **********************************************************/
 
 @media screen and (min-width: 920px) {
-
-  .social-contact li {
-    width: 400px;
+  /**************************
+GENERAL
+**************************/
+  .mobile-hide {
+    display: block !important;
   }
-
+  .desktop-hide {
+    display: none;
+  }
+  .social-contact li {
+    width: 33%;
+  }
+  .form-dropdown::after {
+    top: 16px;
+  }
+  .form-input {
+    padding: 20px;
+  }
+  .anchor {
+    display: block;
+    height: 80px;
+    /*same height as header*/
+    margin-top: -80px;
+    /*same height as header*/
+  }
+  /**********************************************
+NAVIGATION
+**********************************************/
+  .nav-bar {
+    height: 80px;
+  }
+  #logo_img {
+    position: relative;
+    background-image: url('../img/symbols/logo-small.png');
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: center;
+    height: 70px;
+    top: 25;
+    margin: -20px 10px 0;
+  }
+  #logo_img.scrolled {
+    position: relative;
+    background-image: url('../img/symbols/logo-small-invert.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    height: 60px;
+    top: 10;
+    margin: -20px 10px 0;
+  }
+  /**********************************************
+NAVIGATION SCROLLED
+**********************************************/
+  .nav-bar.scrolled {
+    background-color: rgba(255, 255, 255, 1);
+    transition: 0.2s;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+    z-index: 900;
+    top: 0;
+  }
+  #logo_img.scrolled {
+    display: none;
+  }
+  /*******************************
+HEADERS
+********************************/
+  .fa-angle-double-down {
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  /*******************************
+SOCIAL / CONTACT STRIP
+********************************/
+  .social-contact {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 20px;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    margin-bottom: 17px;
+    font-size: 12px;
+    line-height: 24px;
+    width: 300px;
+  }
+  .contact a {
+    padding: 0;
+  }
+  .social a,
+  .social span,
+  .contact a,
+  .contact p {
+    color: white;
+  }
+  .social span {
+    font-weight: normal;
+  }
+  .contact-a a {
+    display: inline-block !important;
+    text-align: right;
+  }
+  /**********************************************
+PAGE: EAT & DRINK
+**********************************************/
+  .flex-eat-drink {
+    padding-bottom: 60px;
+  }
+  .eat-drink-img {
+    max-width: 55%;
+    min-height: 400px;
+    height: 400px;
+    width: 600px;
+    max-height: 600px;
+  }
+  .eat-drink-copy {
+    width: auto;
+    max-width: 45%;
+    padding: 40px;
+    height: 400px;
+  }
+  /**********************************************
+PAGE: FUNCTIONS
+**********************************************/
+  .flex-functions {
+    padding-bottom: 60px;
+  }
+  .functions-img {
+    max-width: 55%;
+    min-height: 400px;
+    height: 400px;
+    width: 600px;
+    max-height: 600px;
+  }
+  .functions-copy {
+    width: auto;
+    max-width: 45%;
+    padding: 40px;
+    height: 400px;
+  }
 }
