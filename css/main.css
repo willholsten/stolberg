@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lekton:400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
 /**********************************************
-GENERAL RESET
+RESET
 **********************************************/
 
 * {
@@ -42,7 +42,7 @@ body {
 }
 
 .overflow-hidden {
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 img {
@@ -121,11 +121,40 @@ input:-webkit-autofill {
 GENERAL
 **********************************************/
 
+.error-page {
+  height: calc(100% - 67px);
+  max-height: calc(100% - 67px);
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.error-page h1 {
+  font-weight: 900;
+}
+.error-page h1 , .error-page h2 {
+  text-transform: none;
+  color: white;
+  letter-spacing: 0;
+}
+.nav-background {
+  height: 80px;
+  background-color: #323238;
+}
+.fa-exclamation-triangle {
+  font-size: 40px;
+  color: tomato;
+}
+
+
+
 .page-section {
   padding: 40px 10px;
   /* z-index: 999 !important; */
   max-width: 100%;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 .inner-page-section {
@@ -357,12 +386,6 @@ HOVERS
   border-bottom: 2px solid #7daf99;
 }
 
-.nav-bar a.scrolled:hover,
-.nav-bar span.scrolled:hover {
-  color: #7daf99 !important;
-  transition: 0.2s;
-}
-
 .inlineLinks a:hover {
   transition: 0.2s;
   padding-bottom: 8px;
@@ -373,46 +396,9 @@ HOVERS
 NAVIGATION
 **********************************************/
 
-.nav-bar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 17px 20px;
-  z-index: 100 !important;
-  margin: 0 auto;
-  height: 60px;
-  margin: auto;
-  max-width: 100%;
-  width: auto;
-}
-
-.nav-bar a,
-.nav-bar span {
-  justify-content: center;
-  width: 110px;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 14px;
-  vertical-align: middle;
-  font: 300 12px/20px 'Montserrat', sans-serif;
-  color: white;
-  margin: 30px 10px 0;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.nav-bar i {
-  color: white;
-  z-index: 999 !important;
-}
-
 .nav-button {
   position: fixed;
-  top: 15px;
+  top: 19px;
   left: 15px;
   cursor: pointer;
   z-index: 999 !important;
@@ -435,24 +421,23 @@ NAVIGATION
   font-size: 20px;
 }
 
-.mobile-menu-container {
+.navigation-menu {
   display: none;
-}
-
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   position: fixed;
   background-color: rgba(0, 0, 0, .95);
+  min-height: 80px;
+  vertical-align: middle;
   height: 100%;
   width: 100%;
+  padding: 20px 0;
   padding-left: 50px;
   z-index: 900;
 }
 
-.mobile-menu a,
-.mobile-menu span {
+.navigation-menu a,
+.navigation-menu span {
   display: flex;
   padding: 20px 0;
   color: white;
@@ -567,16 +552,6 @@ NAVIGATION SCROLLED
   border-radius: 5px;
 }
 
-.nav-bar a.scrolled {
-  color: black !important;
-  margin-top: 5px;
-}
-
-.nav-bar span.scrolled {
-  color: black !important;
-  margin-top: 5px;
-}
-
 .nav-bar i.scrolled {
   color: black !important;
 }
@@ -655,7 +630,7 @@ PAGE HEADERS
 
 .page-header p {
   color: white;
-  width: 920px;
+  width: 820px;
   max-width: 100%;
   padding: 0 15px;
   font-size: 14px;
@@ -703,6 +678,14 @@ PAGE HEADERS
 
 .the-stolberg-room-header {
   background: url("../img/page-headers/the-stolberg-room.jpg");
+}
+
+.error-header {
+  background: url("../img/page-headers/error.jpg");
+}
+
+.vegas-object {
+  height: 100%;
 }
 
 .page-header {
@@ -898,7 +881,7 @@ BOOKING FORM
   background: rgba(0, 0, 0, .65);
   height: 100%;
   width: 100%;
-  z-index: 800;
+  z-index: 999;
 }
 
 .booking-logo {
@@ -912,13 +895,13 @@ BOOKING FORM
 }
 
 .booking-form-content {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   height: 100%;
-  width: 450px;
+  width: 100%;
   max-width: 100%;
-  padding: 20px;
+  padding: 40px 20px;
   background-color: white;
   overflow: scroll;
 }
@@ -978,6 +961,7 @@ FUNCTIONS FORM
 
 #message {
   min-height: 200px;
+  max-width: 1170px;
 }
 
 .function-select {
@@ -1030,11 +1014,6 @@ CONTACT FORM
 /**********************************************
 HOMEPAGE
 **********************************************/
-
-/* .home-wrapper {
-  height: 100% !important;
-  width: 100%;
-} */
 
 .home-content {
   position: relative;

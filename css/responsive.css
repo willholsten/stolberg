@@ -149,6 +149,9 @@ FORM
   .newsletter-content {
     padding: 60px 40px;
   }
+  .booking-form-content {
+    width: 450px;
+  }
   /**********************************************
 PAGE: HOMEPAGE
 **********************************************/
@@ -244,44 +247,83 @@ GENERAL
     margin-top: -80px;
     /*same height as header*/
   }
+  .error-page {
+    height: calc(100% - 257px);
+    max-height: calc(100% - 257px);
+  }
+  .error-page h1 {
+    font-size: 72px;
+  }
+  .nav-background {
+    height: 110px;
+  }
+  .fa-exclamation-triangle {
+    font-size: 60px;
+  }
   /**********************************************
 NAVIGATION
 **********************************************/
-  .nav-bar {
-    height: 80px;
+  .navigation-menu {
+    display: block !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rgba(0,0,0,0);
+    padding: 25px 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    height: unset;
+    }
+
+  .navigation-menu a, .navigation-menu span {
+    display: inline-block;
+    width: 115px;
+    padding: 10px 0;
+    vertical-align: middle;
+    font: bold 12px/20px 'Montserrat', sans-serif;
+    color: white;
+    margin: 0 5px 0;
+    text-transform: uppercase;
+    text-align: center;
   }
+
+.fade-in, .one, .two, .three, .four, .five, .six {
+  animation: none;
+  opacity: 1;
+}
+
   #logo_img {
     position: relative;
-    background-image: url('../img/symbols/logo-small.png');
+    background-image: url('http://stolberg.com.au/img/symbols/logo-small.png');
     background-repeat: no-repeat;
     background-size: 60px;
     background-position: center;
     height: 70px;
-    top: 25;
-    margin: -20px 10px 0;
-  }
-  #logo_img.scrolled {
-    position: relative;
-    background-image: url('../img/symbols/logo-small-invert.png');
-    background-repeat: no-repeat;
-    background-size: 50px;
-    background-position: center;
-    height: 60px;
     top: 10;
     margin: -20px 10px 0;
   }
+  
   /**********************************************
 NAVIGATION SCROLLED
 **********************************************/
-  .nav-bar.scrolled {
+  .navigation-menu.scrolled {
     background-color: rgba(255, 255, 255, 1);
-    transition: 0.2s;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
     z-index: 900;
     top: 0;
+    padding: 15px 0;
+  }
+  .navigation-menu a.scrolled, .navigation-menu span.scrolled {
+    color: black !important;
   }
   #logo_img.scrolled {
-    display: none;
+    position: relative;
+    background-image: url('http://stolberg.com.au/img/symbols/logo-small-invert.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    top: 10;
+    margin: -20px 10px 0;
   }
   /*******************************
 HEADERS

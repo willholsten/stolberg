@@ -1,9 +1,22 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29548332-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-29548332-2');
+  </script>
+
+
   <title>What's On | The Stolberg</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- General Page Meta -->
   <meta name="description" content="Discover What's On at The Stolberg - from Trivia & Family Nights and of course our daily specials."
   />
 
@@ -15,9 +28,9 @@
   <link rel="stylesheet" href="css/vegas.css">
   <link rel="stylesheet" href="css/slick/slick.css">
   <link rel="stylesheet" href="css/slick/slick-theme.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/animate.css">
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -33,12 +46,12 @@
   <div id="newsletter"></div>
   <div id="booking"></div>
 
-  <div class="page-header whats-on-header wow fadeIn">
-    <h1 class="wow fadeInDown" data-wow-delay="1.5s">What's On</h1>
-    <p class="wow fadeInUp" data-wow-delay="1.5s">Check out all our weekly specials below. From Accoustic sessions to Family Night, I’m sure you will find the right night for you!</p>
-    <a href="#page-top">
-      <i class="fas fa-angle-double-down wow animated fadeInDown green-hover" data-wow-duration="2s" data-wow-delay="2s"></i>
-    </a>
+  <div class="page-header whats-on-header"  data-aos="fade">
+      <h1 data-aos="fade-down" data-aos-delay="700">What's On</h1>
+      <p data-aos="fade-up" data-aos-delay="700">Check out all our weekly specials below. From Accoustic sessions to Family Night, I’m sure you will find the right night for you!</p>
+      <a href="#page-top" data-aos="fade-down" data-aos-delay="1200">
+          <i class="fas fa-angle-double-down opcity"></i>
+        </a>
 
     <div id="color-overlay"></div>
     <div id="social-contact"></div>
@@ -50,19 +63,19 @@
 
       
       <ul class="flex-whats-on">
-        <li class="wow fadeInUp" data-wow-delay="1.5s">
+        <li data-aos="fade">
           <img src="img/whats-on/monday.jpg" alt="Whats On - Monday">
           <h3>Monday</h3>
           <h4>Family Night</h4>
           <p>Kids eat free with kids movies showing in The Mahogany Room.</p>
         </li>
-        <li class="wow fadeInUp" data-wow-delay="1.5s">
+        <li data-aos="fade">
           <img src="img/whats-on/wednesday.jpg" alt="Whats On - Wednesday">
           <h3>Wednesday</h3>
           <h4>Trivia Night</h4>
           <p>$15 Parma / Eggplant Parma</p>
         </li>
-        <li class="wow fadeInUp" data-wow-delay="1.5s">
+        <li data-aos="fade">
           <img src="img/whats-on/thursday.jpg" alt="Whats On - Thursday">
           <h3>Thursday</h3>
           <h4>Steak Night</h4>
@@ -71,7 +84,7 @@
           <p>250g Eye Fillet $22</p>
           <p>All served with coleslaw, chips and choice of sauce.</p>
         </li>
-        <li class="wow fadeInUp" data-wow-delay="1.5s">
+        <li data-aos="fade">
           <img src="img/whats-on/friday.jpg" alt="Whats On - Friday">
           <h3>Friday</h3>
           <h4>Acoustic Sessions</h4>
@@ -80,13 +93,13 @@
           <p>$8 pints to 8pm</p>
           <p>Live music in the front bar from 7.30pm</p>
         </li>
-        <li class="wow fadeInUp" data-wow-delay="1.5s">
+        <li data-aos="fade">
           <img src="img/whats-on/sunday.jpg" alt="Whats On - Sunday">
           <h3>Sunday</h3>
           <h4>Sunday Session</h4>
-          <p>$12 Jugs of Melbourne Bitter 12pm-5pm</p>
+          <p>$12 Jugs of Melbourne Bitter 2pm-6pm</p>
         </li>
-        <li class="wow fadeInUp" data-wow-delay="1.5s">
+        <li data-aos="fade">
           <img src="img/whats-on/everyday.jpg" alt="Whats On - Everday">
           <h3>Everyday</h3>
           <h4>Show your room key...</h3>
@@ -109,7 +122,7 @@
 
   <!-- Scripts -->
   <script src="js/scripts.js"></script>
-  <script src="js/wow.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="js/vegas.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/contact-app.js"></script>

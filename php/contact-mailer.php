@@ -21,7 +21,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "mail@willholsten.com, info@stolberg.com.au";
+        $recipient = "info@stolberg.com.au";
 
         // Set the email subject.
         $subject = "General Enquiry: $name";

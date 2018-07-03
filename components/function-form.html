@@ -1,10 +1,11 @@
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <div class="page-section function-form white-bg">
   <div class="inner-page-section">
-    <h2 class="center wow fadeIn" data-wow-delay=".75s">Function Enquiry</h2>
+    <h2 class="center" data-aos="fade">Function Enquiry</h2>
 
     <form id="ajax-function" method="post" action="php/function-mailer.php">
       <div id="function-form-message"></div>
-      <div class="form-flex wow fadeIn" data-wow-delay="1.5s">
+      <div class="form-flex" data-aos="fade">
         <div class="half">
           <input class="input form-input" type="text" id="name" name="name" required placeholder="Name"/>
           <input class="input form-input" type="email" id="email" name="email" required placeholder="Email"/>
@@ -27,9 +28,11 @@
             </select>
           </span>
         </div>
-        <textarea class="input form-input form-message" id="message" name="message" required placeholder="Message..."></textarea>
-        <button class="button-submit" type="submit" value="Submit">Submit</button>
       </div>
+        <textarea class="input form-input form-message" id="message" name="message" required placeholder="Message..."></textarea>
+        <div class="g-recaptcha" data-sitekey="6LeucF0UAAAAAK2hn9aqGb3Sfx6dOLaFAzt8j2R2"></div>
+        <button class="button-submit" type="submit" value="Submit">Submit</button>
+      
     </form>
 
   </div>

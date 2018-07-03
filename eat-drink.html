@@ -1,9 +1,22 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29548332-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-29548332-2');
+  </script>
+
+
   <title>Eat & Drink | The Stolberg</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- General Page Meta -->
   <meta name="description" content="The Stolberg takes pride in our diverse food and beverage offering to cater to all walks of life."/>
 
   <!-- Favicon -->
@@ -14,9 +27,9 @@
   <link rel="stylesheet" href="css/vegas.css">
   <link rel="stylesheet" href="css/slick/slick.css">
   <link rel="stylesheet" href="css/slick/slick-theme.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/animate.css">
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -31,13 +44,13 @@
   <div id="newsletter"></div>
   <div id="booking"></div>
 
-  <div class="page-header eat-drink-header wow fadeIn">
-    <h1 class="wow fadeInDown" data-wow-delay="1.5s">Eat & Drink</h1>
-    <p class="wow fadeInUp" data-wow-delay="1.5s">The Stolberg takes pride in our diverse food and beverage offering to cater to all walks of life. We boast a vegan and
+  <div class="page-header eat-drink-header" data-aos="fade">
+    <h1 data-aos="fade-down" data-aos-delay="700">Eat & Drink</h1>
+    <p data-aos="fade-up" data-aos-delay="700">The Stolberg takes pride in our diverse food and beverage offering to cater to all walks of life. We boast a vegan and
       vegetarian friendly menu with plenty of gluten free options. An extensive wine list along with craft beer and cocktails
       we have just what your pallet desires whether it be to go with a steak or snack with some friends.</p>
-    <a href="#page-top">
-      <i class="fas fa-angle-double-down wow animated fadeInDown green-hover" data-wow-duration="2s" data-wow-delay="2s"></i>
+    <a href="#page-top" data-aos="fade-down" data-aos-delay="1200">
+      <i class="fas fa-angle-double-down opcity"></i>
     </a>
 
     <div id="color-overlay"></div>
@@ -50,11 +63,11 @@
 
 
       <div class="flex-eat-drink">
-        <li class="eat-drink-img wow fadeInLeft" data-wow-delay="0.75s">
+        <li class="eat-drink-img" data-aos="fade-right">
           <img src="img/eat-drink/eat.jpg" alt="Eat">
         </li>
 
-        <li class="eat-drink-copy wow fadeInRight" data-wow-delay="0.75s">
+        <li class="eat-drink-copy" data-aos="fade-left">
           <h2 class="left">Eat</h2>
           <p class="left">The Stolberg offers a casual dining experience perfect for any occasion; from a corporate lunch to a dinner with
             friends. Designed by our head chef James Pollard, our menu has a mix of classic pub grub and Australian contemporary.
@@ -77,11 +90,11 @@
       </div>
 
       <div class="flex-eat-drink flex-reverse">
-        <li class="eat-drink-img wow fadeInRight" data-wow-delay="0.75s">
+        <li class="eat-drink-img" data-aos="fade-left">
           <img src="img/eat-drink/drink.jpg" alt="Drink">
         </li>
 
-        <li class="eat-drink-copy wow fadeInLeft" data-wow-delay="0.75s">
+        <li class="eat-drink-copy" data-aos="fade-right">
           <h2 class="left">Drink</h2>
           <p class="left">With 12 rotating seasonal beers we have something for everyone all year round. We offer our patrons an ever-changing
             beer and wine list boasting seasonal and specialty beers.
@@ -107,7 +120,7 @@
 
   <!-- Scripts -->
   <script src="js/scripts.js"></script>
-  <script src="js/wow.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="js/vegas.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/contact-app.js"></script>

@@ -1,3 +1,4 @@
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <div class="booking-form-container">
 		<div id="booking"></div>
 	<div class="booking-form">	
@@ -16,7 +17,8 @@
 				<input class="input form-input" type="text" id="date" name="date" required placeholder="Date"/>
 				<input class="input form-input" type="text" id="time" name="time" required placeholder="Time"/>
 				<input class="input form-input" type="text" id="guests" name="guests" required placeholder="Number of Guests"/>
-				<textarea class="input form-input" id="booking-message" name="message" placeholder="Special requests"></textarea>
+        <textarea class="input form-input" id="booking-message" name="message" placeholder="Special requests"></textarea>
+        <div class="g-recaptcha" data-sitekey="6LeucF0UAAAAAK2hn9aqGb3Sfx6dOLaFAzt8j2R2"></div>
 				<button class="button-submit" type="submit" value="Submit">Submit</button>
 			</form>
 		</div>

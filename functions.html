@@ -1,9 +1,22 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29548332-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-29548332-2');
+  </script>
+
+
   <title>Functions | The Stolberg</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- General Page Meta -->
   <meta name="description" content="Home to four function rooms, perfect for hosting a cocktail party, celebrating a birthday or organising a special corporate event."/>
 
   <!-- Favicon -->
@@ -14,13 +27,14 @@
   <link rel="stylesheet" href="css/vegas.css">
   <link rel="stylesheet" href="css/slick/slick.css">
   <link rel="stylesheet" href="css/slick/slick-theme.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/animate.css">
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -32,12 +46,14 @@
   <div id="newsletter"></div>
   <div id="booking"></div>
 
-  <div class="page-header functions-header  wow fadeIn">
-      <h1 class="wow fadeInDown" data-wow-delay="1.5s">Functions</h1>
-      <p class="wow fadeInUp" data-wow-delay="1.5s">The Stolberg is home to four beautiful function rooms, with capacity ranging from 25 to 350 guests.</br></br>
+  <div class="page-header functions-header" data-aos="fade">
+      <h1 data-aos="fade-down" data-aos-delay="700">Functions</h1>
+    <p data-aos="fade-up" data-aos-delay="700">The Stolberg is home to four beautiful function rooms, with capacity ranging from 25 to 350 guests.</br></br>
       Whether you're hosting a cocktail party, celebrating a birthday or organising a special corporate event, our friendly and attentive function team can help you craft the perfect occasion to suit your theme, budget and taste preferences.</br></br>
       <a class="underline" target="_blank" href="img/stolberg-function-pack.pdf">Download</a> our function pack and start creating your perfect event.</p>
-      <a href="#page-top"><i class="fas fa-angle-double-down wow animated fadeInDown green-hover" data-wow-duration="2s" data-wow-delay="2s"></i></a>
+      <a href="#page-top" data-aos="fade-down" data-aos-delay="1200">
+          <i class="fas fa-angle-double-down opcity"></i>
+        </a>
 
       <div id="color-overlay"></div>
       <div id="social-contact"></div>
@@ -48,10 +64,10 @@
     <div class="inner-page-section">
 
       <div class="flex-functions">
-        <div class="functions-img wow fadeInLeft" data-wow-delay="0.75s">
+        <div class="functions-img" data-aos="fade-right">
           <img src="img/function-rooms/likor-lounge-1.jpg" alt="Likor Lounge">
         </div>
-        <div class="functions-copy wow fadeInRight" data-wow-delay="0.75s">
+        <div class="functions-copy" data-aos="fade-left">
           <h2 class="left">Likor Lounge</h2>
           <p class="left">A premium space with an exclusive and luxurious feel. With crystal chandeliers, rich marble bar and a vibrant palette, the Likor Lounge is sure to make an impact on your guests. Perfect for any private event, this room offers an exclusive and generous space with an outdoor area and large dance floor.
           </p>
@@ -66,10 +82,10 @@
       </div>
 
       <div class="flex-functions flex-reverse">
-        <div class="functions-img wow fadeInRight" data-wow-delay="0.75s">
+        <div class="functions-img" data-aos="fade-left">
           <img src="img/function-rooms/the-mahogany-room-1.jpg" alt="The Mahogany Room">
         </div>
-        <div class="functions-copy wow fadeInLeft" data-wow-delay="0.75s">
+        <div class="functions-copy" data-aos="fade-right">
           <h2 class="left">The Mahogany Room</h2>
           <p class="left">This self-contained function room has polished wooden floors and charcoal walls decorated with thick gold framed mirrors.  Large chesterfield couches line the walls which sets the mood for that grand sit-down dinner or cocktail function.
           </p>
@@ -86,10 +102,10 @@
 
 
       <div class="flex-functions">
-        <li class="functions-img wow fadeInLeft" data-wow-delay="0.75s">
+        <li class="functions-img" data-aos="fade-right">
           <img src="img/function-rooms/the-front-bar-1.jpg" alt="The Front Bar">
         </li>
-        <li class="functions-copy wow fadeInRight" data-wow-delay="0.75s">
+        <li class="functions-copy" data-aos="fade-left">
           <h2 class="left">The Front Bar</h2>
           <p class="left">The Front Bar has a relaxed & stylish feel. This multipurpose room can be transformed for any event, cocktail or sit-down. Perfect for craft beer lovers, with a choice of 12 different beers on tap including an espresso martini tap!
           </p>
@@ -104,10 +120,10 @@
       </div>
 
       <div class="flex-functions flex-reverse">
-        <div class="functions-img wow fadeInRight" data-wow-delay="0.75s">
+        <div class="functions-img" data-aos="fade-left">
           <img src="img/function-rooms/the-stolberg-room-1.jpg" alt="The Stolberg Room">
         </div>
-        <div class="functions-copy wow fadeInLeft" data-wow-delay="0.75s">
+        <div class="functions-copy" data-aos="fade-right">
           <h2 class="left">The Stolberg Room</h2>
           <p class="left">With its own private courtyard & bar, boasting large mirrors, wooden floor boards and featured chandeliers, it’s the perfect space for any cocktail or private dining event.
           </p>
@@ -137,7 +153,7 @@
 
   <!-- Scripts -->
   <script src="js/scripts.js"></script>
-  <script src="js/wow.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="js/vegas.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/contact-app.js"></script>
