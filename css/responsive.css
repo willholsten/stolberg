@@ -18,21 +18,6 @@ MEDIA QUERY: 481PX
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**********************************************************
  TABLET - MEDIA QUERY: 760PX
 **********************************************************/
@@ -202,21 +187,6 @@ CONTACT
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**********************************************************
 DESKTOP - MEDIA QUERY: 920PX
 **********************************************************/
@@ -267,15 +237,15 @@ NAVIGATION
     display: block !important;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     padding: 25px 0;
     margin: 0 auto;
     width: 100%;
     text-align: center;
     height: unset;
-    }
-
-  .navigation-menu a, .navigation-menu span {
+  }
+  .navigation-menu a,
+  .navigation-menu span {
     display: inline-block;
     width: 115px;
     padding: 10px 0;
@@ -286,15 +256,19 @@ NAVIGATION
     text-transform: uppercase;
     text-align: center;
   }
-
-.fade-in, .one, .two, .three, .four, .five, .six {
-  animation: none;
-  opacity: 1;
-}
-
+  .fade-in,
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six {
+    animation: none;
+    opacity: 1;
+  }
   #logo_img {
     position: relative;
-    background-image: url('http://stolberg.com.au/img/symbols/logo-small.png');
+    background-image: url('https://stolberg.com.au/img/symbols/logo-small.png');
     background-repeat: no-repeat;
     background-size: 60px;
     background-position: center;
@@ -302,7 +276,6 @@ NAVIGATION
     top: 10;
     margin: -20px 10px 0;
   }
-  
   /**********************************************
 NAVIGATION SCROLLED
 **********************************************/
@@ -313,12 +286,13 @@ NAVIGATION SCROLLED
     top: 0;
     padding: 15px 0;
   }
-  .navigation-menu a.scrolled, .navigation-menu span.scrolled {
+  .navigation-menu a.scrolled,
+  .navigation-menu span.scrolled {
     color: black !important;
   }
   #logo_img.scrolled {
     position: relative;
-    background-image: url('http://stolberg.com.au/img/symbols/logo-small-invert.png');
+    background-image: url('https://stolberg.com.au/img/symbols/logo-small-invert.png');
     background-repeat: no-repeat;
     background-size: 50px;
     background-position: center;

@@ -1,13 +1,12 @@
 <?php
     // My modifications to mailer script from:
-    // http://blog.teamtreehouse.com/create-ajax-contact-form
     // Added input sanitizing to prevent injection
 
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
-		$name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $phone = trim($_POST["phone"]);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $occasion = trim($_POST["occasion"]);

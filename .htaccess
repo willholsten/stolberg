@@ -1,5 +1,12 @@
-# Remove HTML extension
 RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTP_HOST} stolberg\.com\.au [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.stolberg.com.au/$1 [R,L]
+
+
+# Remove HTML extension
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 

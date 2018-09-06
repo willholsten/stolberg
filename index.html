@@ -2,22 +2,26 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29548332-2"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121952622-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
-    gtag('config', 'UA-29548332-2');
+    gtag('config', 'UA-121952622-2');
   </script>
 
-  
+
   <title>The Stolberg | Melbourne Bar, Restaurant & Function Hire</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- General Page Meta -->
-  <meta name="description" content="The Stolberg in Preston, Melbourne is home to four beautiful function rooms, catering for events from 21st, engagement parties & weddings to corporate functions."/>
+  <meta name="description" content="The Stolberg in Preston, Melbourne is home to four beautiful function rooms, catering for events from 21st, engagement parties & weddings to corporate functions."
+  />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
@@ -30,8 +34,8 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
-  
 
+  <meta name="google-site-verification" content="x8vrjLLjDs4NPpUfQ2U87dy8de7DV6otDrdIpawu96Y" />
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -43,36 +47,44 @@
 
   <!-- Content : Start -->
   <header>
-      <div class="nav-button desktop-hide"><span class="fas fa-bars"></span></div>
-      <div class="nav-close desktop-hide"><span class="fas fa-times"></span></div>
-      <a class="opacity desktop-hide" id='logo_img' href="/"><img src="img/symbols/logo-small.png" alt="The Stolberg Logo - Mobile"></a>
-    
-      <!-- Navigation Links-->
-      <nav class="navigation-menu" data-aos="fade-down">
-        <a class="green-hover fade-in one" href="/eat-drink">Eat & Drink</a>
-        <a class="green-hover fade-in two" href="/whats-on">What's On</a>
-        <a class="green-hover fade-in three" href="/functions">Functions</a>
-        <a class="opacity" id='logo_img' href="./" alt="The Stolberg Logo - Desktop"></a>
-        <a class="green-hover fade-in four" href="/gallery">Gallery</a>
-        <a class="green-hover fade-in five" href="/contact">Contact</a>
-        <span class="green-hover fade-in six booking">Book</span>
-      </nav>
-    </header>
+    <div class="nav-button desktop-hide">
+      <span class="fas fa-bars"></span>
+    </div>
+    <div class="nav-close desktop-hide">
+      <span class="fas fa-times"></span>
+    </div>
+    <a class="opacity desktop-hide" id='logo_img' href="/">
+      <img src="img/symbols/logo-small.png" alt="The Stolberg Logo - Mobile">
+    </a>
+
+    <!-- Navigation Links-->
+    <nav class="navigation-menu" data-aos="fade-down">
+      <a class="green-hover fade-in one" href="/eat-drink">Eat & Drink</a>
+      <a class="green-hover fade-in two" href="/whats-on">What's On</a>
+      <a class="green-hover fade-in three" href="/functions">Functions</a>
+      <a class="opacity" id='logo_img' href="./" alt="The Stolberg Logo - Desktop"></a>
+      <a class="green-hover fade-in four" href="/gallery">Gallery</a>
+      <a class="green-hover fade-in five" href="/contact">Contact</a>
+      <span class="green-hover fade-in six booking">Book</span>
+    </nav>
+  </header>
   <div id="newsletter"></div>
   <div id="booking"></div>
 
-  <div class="vegas-wrapper">
-    <div class="home-content">
-      <img class="home-logo" data-aos="fade-down" data-aos-delay="700" src="img/symbols/stolberg-large.png" alt="The Stolberg Logo - Desktop">
-      <div data-aos="fade-up" data-aos-delay="700">
-        <a target="_blank" class="homepageButton opacity" href="img/menus/The-Stolberg-Food-Menu.pdf">View Menus</a>
-        <span class="homepageButton opacity booking">Book a Table</span>
+  <div>
+    <div class="vegas-wrapper">
+      <div class="home-content">
+        <img class="home-logo" data-aos="fade-down" data-aos-delay="700" src="img/symbols/stolberg-large.png" alt="The Stolberg Logo - Desktop">
+        <div data-aos="fade-up" data-aos-delay="700">
+          <a target="_blank" class="homepageButton opacity" href="img/menus/The-Stolberg-Food-Menu.pdf">View Menus</a>
+          <span class="homepageButton opacity booking">Book a Table</span>
+        </div>
       </div>
+      <div id="color-overlay"></div>
+      <div id="social-contact"></div>
     </div>
-    <div id="color-overlay"></div>
-    <div id="social-contact"></div>
-
   </div>
+  <div id="footer"></div>
   <!-- Content : End -->
 
 
@@ -92,12 +104,12 @@
 
   <!-- HTML Loads -->
   <script>
-      $("#navigation").load("components/navigation.html");
-      $("#social-contact").load("components/social-contact.html");
-      $("#booking").load("components/booking.html");
-      $("#newsletter").load("components/newsletter.html");
-      $("#function-form").load("components/function-form.html");
-      $("#footer").load("components/footer.html");
+    $("#navigation").load("components/navigation.html");
+    $("#social-contact").load("components/social-contact.html");
+    $("#booking").load("components/booking.html");
+    $("#newsletter").load("components/newsletter.html");
+    $("#function-form").load("components/function-form.html");
+    $("#footer").load("components/footer.html");
   </script>
 </body>
 

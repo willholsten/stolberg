@@ -2,13 +2,16 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29548332-2"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121952622-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
-    gtag('config', 'UA-29548332-2');
+    gtag('config', 'UA-121952622-2');
   </script>
 
 
@@ -35,7 +38,7 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -47,11 +50,11 @@
   <div id="booking"></div>
 
   <div class="page-header contact-header" data-aos="fade">
-      <h1 data-aos="fade-down" data-aos-delay="700">Contact</h1>
-      <p data-aos="fade-up" data-aos-delay="700">We would love to hear from you, please get in touch by calling or completing the enquiry form below.</p>
+    <h1 data-aos="fade-down" data-aos-delay="700">Contact</h1>
+    <p data-aos="fade-up" data-aos-delay="700">We would love to hear from you, please get in touch by calling or completing the enquiry form below.</p>
     <a href="#page-top" data-aos="fade-down" data-aos-delay="1200">
-        <i class="fas fa-angle-double-down opcity"></i>
-      </a>
+      <i class="fas fa-angle-double-down opcity"></i>
+    </a>
 
     <div id="color-overlay"></div>
     <div id="social-contact"></div>
@@ -86,10 +89,11 @@
 
         <li>
           <h4 class="margin-top-reset">Get In Touch</h4>
-          <form class="form-message" id="ajax-contact" method="post" action="php/contact-mailer.php">
+          <form class="form-message" method="post" name="contact-form" netlify>
+            <input type="hidden" name="form-name" value="contact" />
             <div id="contact-form-messages"></div>
-            <input class="input form-input" type="text" id="name" name="name" required placeholder="Name"/>
-            <input class="input form-input" type="email" id="email" name="email" required placeholder="Email"/>
+            <input class="input form-input" type="text" id="name" name="name" required placeholder="Name" />
+            <input class="input form-input" type="email" id="email" name="email" required placeholder="Email" />
             <textarea class="input form-input contact-message-box" type="text" id="message" name="message" required placeholder="Message..."></textarea>
             <div class="g-recaptcha" data-sitekey="6LeucF0UAAAAAK2hn9aqGb3Sfx6dOLaFAzt8j2R2"></div>
             <button class="button-submit" type="submit" value="Submit">Submit</button>

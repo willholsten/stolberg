@@ -2,13 +2,16 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29548332-2"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121952622-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
-    gtag('config', 'UA-29548332-2');
+    gtag('config', 'UA-121952622-2');
   </script>
 
 
@@ -17,19 +20,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- General Page Meta -->
-  <meta name="description" content="The Stolberg in Preston, Melbourne is home to four beautiful function rooms, catering for events from 21st, engagement parties & weddings to corporate functions."/>
+  <meta name="description" content="The Stolberg in Preston, Melbourne is home to four beautiful function rooms, catering for events from 21st, engagement parties & weddings to corporate functions."
+  />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="http://stolberg.com.au/css/normalise.css">
-  <link rel="stylesheet" href="http://stolberg.com.au/css/vegas.css">
-  <link rel="stylesheet" href="http://stolberg.com.au/css/slick/slick.css">
-  <link rel="stylesheet" href="http://stolberg.com.au/css/slick/slick-theme.css">
+  <link rel="stylesheet" href="/css/normalise.css">
+  <link rel="stylesheet" href="/css/vegas.css">
+  <link rel="stylesheet" href="/css/slick/slick.css">
+  <link rel="stylesheet" href="/css/slick/slick-theme.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
-  <link rel="stylesheet" href="http://stolberg.com.au/css/main.css">
-  <link rel="stylesheet" href="http://stolberg.com.au/css/responsive.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/responsive.css">
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -42,29 +46,35 @@
 
   <!-- Content : Start -->
   <header>
-      <div class="nav-button desktop-hide"><span class="fas fa-bars"></span></div>
-      <div class="nav-close desktop-hide"><span class="fas fa-times"></span></div>
-      <a class="opacity desktop-hide" id='logo_img' href="/"><img src="http://stolberg.com.au/img/symbols/logo-small.png" alt="The Stolberg Logo - Mobile"></a>
-    
-      <!-- Navigation Links-->
-      <nav class="navigation-menu" data-aos="fade-down">
-        <a class="green-hover fade-in one" href="/eat-drink">Eat & Drink</a>
-        <a class="green-hover fade-in two" href="/whats-on">What's On</a>
-        <a class="green-hover fade-in three" href="/functions">Functions</a>
-        <a class="opacity" id='logo_img' href="http://stolberg.com.au" alt="The Stolberg Logo - Desktop"></a>
-        <a class="green-hover fade-in four" href="/gallery">Gallery</a>
-        <a class="green-hover fade-in five" href="/contact">Contact</a>
-        <span class="green-hover fade-in six booking">Book</span>
-      </nav>
-    </header>
+    <div class="nav-button desktop-hide">
+      <span class="fas fa-bars"></span>
+    </div>
+    <div class="nav-close desktop-hide">
+      <span class="fas fa-times"></span>
+    </div>
+    <a class="opacity desktop-hide" id='logo_img' href="/">
+      <img src="https://stolberg.com.au/img/symbols/logo-small.png" alt="The Stolberg Logo - Mobile">
+    </a>
+
+    <!-- Navigation Links-->
+    <nav class="navigation-menu" data-aos="fade-down">
+      <a class="green-hover fade-in one" href="/eat-drink">Eat & Drink</a>
+      <a class="green-hover fade-in two" href="/whats-on">What's On</a>
+      <a class="green-hover fade-in three" href="/functions">Functions</a>
+      <a class="opacity" id='logo_img' href="https://stolberg.com.au" alt="The Stolberg Logo - Desktop"></a>
+      <a class="green-hover fade-in four" href="/gallery">Gallery</a>
+      <a class="green-hover fade-in five" href="/contact">Contact</a>
+      <span class="green-hover fade-in six booking">Book</span>
+    </nav>
+  </header>
   <div id="newsletter"></div>
   <div id="booking"></div>
 
   <div class="error-page page-header error-header">
-    
+
     <h1>Oops!</h1>
     <h2>This is not the webpage you are looking for.</h2>
-    
+
     <div id="color-overlay"></div>
     <div id="social-contact"></div>
   </div>
@@ -75,14 +85,14 @@
 
 
   <!-- Scripts -->
-  <script src="http://stolberg.com.au/js/scripts.js"></script>
+  <script src="/js/scripts.js"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  <script src="http://stolberg.com.au/js/vegas.js"></script>
-  <script src="http://stolberg.com.au/js/slick.min.js"></script>
-  <script src="http://stolberg.com.au/js/contact-app.js"></script>
-  <script src="http://stolberg.com.au/js/function-app.js"></script>
-  <script src="http://stolberg.com.au/js/booking-app.js"></script>
-  
+  <script src="/js/vegas.js"></script>
+  <script src="/js/slick.min.js"></script>
+  <script src="/js/contact-app.js"></script>
+  <script src="/js/function-app.js"></script>
+  <script src="/js/booking-app.js"></script>
+
 
   <!-- Font Awesome -->
   <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -90,12 +100,12 @@
   <!-- HTML Loads -->
   <script>
     $(function () {
-      $("#navigation").load("http://stolberg.com.au/components/navigation.html");
-      $("#social-contact").load("http://stolberg.com.au/components/social-contact.html");
-      $("#booking").load("http://stolberg.com.au/components/booking.html");
-      $("#newsletter").load("http://stolberg.com.au/components/newsletter.html");
-      $("#function-form").load("http://stolberg.com.au/components/function-form.html");
-      $("#footer").load("http://stolberg.com.au/components/footer.html");
+      $("#navigation").load("/components/navigation.html");
+      $("#social-contact").load("/components/social-contact.html");
+      $("#booking").load("/components/booking.html");
+      $("#newsletter").load("/components/newsletter.html");
+      $("#function-form").load("/components/function-form.html");
+      $("#footer").load("/components/footer.html");
     });
   </script>
 </body>
