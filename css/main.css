@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lekton:400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+
 /**********************************************
 RESET
 **********************************************/
-
 * {
   -webkit-box-sizing: border-box;
   /* Safari */
@@ -111,7 +111,6 @@ li {
 }
 
 /* Change the white to any color ;) */
-
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px #F5F5F5 inset !important;
   box-shadow: 0 0 0 30px #F5F5F5 inset !important;
@@ -120,7 +119,6 @@ input:-webkit-autofill {
 /**********************************************
 GENERAL
 **********************************************/
-
 .error-page {
   height: calc(100% - 67px);
   max-height: calc(100% - 67px);
@@ -228,7 +226,6 @@ GENERAL
 /**********************************************
 TEXT
 **********************************************/
-
 h1 {
   margin: 30px auto;
   text-align: center;
@@ -302,7 +299,6 @@ p {
 /*******************************
 BUTTONS
 ********************************/
-
 .button-container {
   display: block;
 }
@@ -366,7 +362,6 @@ BUTTONS
 /**********************************************
 HOVERS
 **********************************************/
-
 .opacity:hover {
   opacity: 1 !important;
   transition: 0.2s;
@@ -398,7 +393,6 @@ HOVERS
 /**********************************************
 NAVIGATION
 **********************************************/
-
 .nav-button {
   position: fixed;
   top: 19px;
@@ -465,6 +459,7 @@ NAVIGATION
     opacity: 0;
     transform: translateX(-200px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -476,6 +471,7 @@ NAVIGATION
     opacity: 0;
     transform: translateX(-200px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -487,6 +483,7 @@ NAVIGATION
     opacity: 0;
     transform: translateX(-200px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -547,7 +544,6 @@ NAVIGATION
 /**********************************************
 NAVIGATION SCROLLED
 **********************************************/
-
 .nav-button.scrolled {
   background-color: rgba(255, 255, 255, .9);
   color: black;
@@ -562,7 +558,6 @@ NAVIGATION SCROLLED
 /**********************************************
 SOCIAL / CONTACT STRIP
 **********************************************/
-
 .social-contact {
   position: absolute;
   display: flex;
@@ -624,7 +619,6 @@ SOCIAL / CONTACT STRIP
 /**********************************************
 PAGE HEADERS
 **********************************************/
-
 .page-banner-content h2 {
   color: white;
   margin: 0 auto;
@@ -709,7 +703,6 @@ PAGE HEADERS
 /**********************************************
 BACKGROUND COLOURS
 **********************************************/
-
 .grey-bg {
   background-color: #f5f5f5;
 }
@@ -725,7 +718,6 @@ BACKGROUND COLOURS
 /**********************************************
 FORMS(GENERAL)
 **********************************************/
-
 .form {
   font-size: 0px;
   margin: 0 auto;
@@ -826,10 +818,26 @@ textarea {
   z-index: 999;
 }
 
+.form-submitted {
+  background: #323238;
+  text-align: center;
+}
+
+.form-submitted h1 {
+  margin: 200px auto 100px;
+}
+
+.form-submitted button {
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  margin: 20px auto;
+}
+
 /*******************
 NEWSLETTER FORM
 ********************/
-
 .newsletter-container {
   display: none;
 }
@@ -871,7 +879,6 @@ NEWSLETTER FORM
 /*******************
 BOOKING FORM
 ********************/
-
 .booking-form-container {
   display: none;
   max-width: 100%;
@@ -930,7 +937,6 @@ BOOKING FORM
 /*******************
 FUNCTIONS FORM
 ********************/
-
 .function-form {
   width: 1200px;
   max-width: 100%;
@@ -1003,7 +1009,6 @@ FUNCTIONS FORM
 /*******************
 CONTACT FORM
 ********************/
-
 .contact-message {
   width: 100%;
   max-width: 100%;
@@ -1019,7 +1024,6 @@ CONTACT FORM
 /**********************************************
 HOMEPAGE
 **********************************************/
-
 .home-content {
   position: relative;
   display: flex;
@@ -1046,7 +1050,6 @@ HOMEPAGE
 /**********************************************
 PAGE: EAT & DRINK
 **********************************************/
-
 .flex-eat-drink {
   display: flex;
   flex-direction: row;
@@ -1083,7 +1086,6 @@ PAGE: EAT & DRINK
 /**********************************************
 PAGE: WHAT'S ON
 **********************************************/
-
 .flex-whats-on {
   display: flex;
   flex-wrap: wrap;
@@ -1120,7 +1122,6 @@ PAGE: WHAT'S ON
 /**********************************************
 PAGE: FUNCTIONS
 **********************************************/
-
 .flex-functions {
   display: flex;
   flex-direction: row;
@@ -1159,7 +1160,6 @@ PAGE: FUNCTIONS
 /**********************************************
 PAGE: GALLERY
 **********************************************/
-
 .instagram {
   text-align: center;
   margin: 0 auto;
@@ -1196,7 +1196,6 @@ iframe {
 /**********************************************
 PAGE: FUNCTION ROOMS
 **********************************************/
-
 .function-room-images {
   position: relative;
   font-size: 0px;
@@ -1253,7 +1252,6 @@ PAGE: FUNCTION ROOMS
 /**********************************************
 PAGE: CONTACT
 **********************************************/
-
 .flex-contact {
   display: flex;
   flex-direction: row;
@@ -1278,7 +1276,6 @@ PAGE: CONTACT
 /**********************************************
 FOOTER
 **********************************************/
-
 .footer {
   display: block;
   clear: both;
@@ -1340,7 +1337,6 @@ FOOTER
 /**********************************************
 HIDE
 **********************************************/
-
 .hide {
   display: none;
 }
