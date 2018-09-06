@@ -89,14 +89,14 @@
 
         <li>
           <h4 class="margin-top-reset">Get In Touch</h4>
-          <form name="contact" method="POST" netlify class="form-message" action="/form-submission">
-            <input type="hidden" name="form-name" value="contact" />
+          <form name="contact-form" method="POST" netlify class="form-message" action="/form-submission">
+            <input type="hidden" name="contact-form" value="contact" />
             <div id="contact-form-messages"></div>
             <input class="input form-input" type="text" id="name" name="name" required placeholder="Name" />
             <input class="input form-input" type="email" id="email" name="email" required placeholder="Email" />
             <textarea class="input form-input contact-message-box" type="text" id="message" name="Message" required
               placeholder="Message..."></textarea>
-            <div class="g-recaptcha" data-sitekey="6LeucF0UAAAAAK2hn9aqGb3Sfx6dOLaFAzt8j2R2"></div>
+            <div data-netlify-recaptcha></div>
             <button type="submit" class="button-submit">Submit</button>
           </form>
         </li>
