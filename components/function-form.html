@@ -3,19 +3,20 @@
   <div class="inner-page-section">
     <h2 class="center" data-aos="fade">Function Enquiry</h2>
 
-    <form name="function-form" method="post" netlify>
+    <form name="function-form" method="POST" netlify action="/form-submission">
+      <input type="hidden" name="function-form" />
       <div id="function-form-message"></div>
       <div class="form-flex" data-aos="fade">
         <div class="half">
-          <input class="input form-input" type="text" id="name" name="name" required placeholder="Name"/>
-          <input class="input form-input" type="email" id="email" name="email" required placeholder="Email"/>
-          <input class="input form-input" type="text" id="phone" name="phone" placeholder="Contact Number"/>
-          <input class="input form-input" type="text" id="occasion" name="occasion" placeholder="Occasion"/>
+          <input class="input form-input" type="text" id="name" name="name" required placeholder="Name" />
+          <input class="input form-input" type="email" id="email" name="email" required placeholder="Email" />
+          <input class="input form-input" type="text" id="phone" name="phone" placeholder="Contact Number" />
+          <input class="input form-input" type="text" id="occasion" name="occasion" placeholder="Occasion" />
         </div>
         <div class="half">
-          <input class="input form-input" type="text" id="date" name="date" placeholder="Event Date"/>
-          <input class="input form-input" type="text" id="time" name="time" placeholder="Event Time"/>
-          <input class="input form-input" type="text" id="guests" name="guests" placeholder="Number of Guests"/>
+          <input class="input form-input" type="text" id="date" name="date" placeholder="Event Date" />
+          <input class="input form-input" type="text" id="time" name="time" placeholder="Event Time" />
+          <input class="input form-input" type="text" id="guests" name="guests" placeholder="Number of Guests" />
 
           <span class="form-dropdown">
             <select class=" form-input function-select" id="roomOption" name="roomOption" placeholder="Preferred Location">
@@ -29,10 +30,10 @@
           </span>
         </div>
       </div>
-        <textarea class="input form-input form-message" id="message" name="message" required placeholder="Message..."></textarea>
-        <div class="g-recaptcha" data-sitekey="6LeucF0UAAAAAK2hn9aqGb3Sfx6dOLaFAzt8j2R2"></div>
-        <button class="button-submit" type="submit" value="Submit">Submit</button>
-      
+      <textarea class="input form-input form-message" id="message" name="message" required placeholder="Message..."></textarea>
+      <div data-netlify-recaptcha></div>
+      <button class="button-submit" type="submit">Submit</button>
+
     </form>
 
   </div>
